@@ -1081,7 +1081,7 @@ send away your ToggleID to tabread;
 #X obj 155 567 tgl 50 1 bt_send_1_5_1 bt_init_1_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 152 483 tgl 50 1 bt_send_1_6_1 bt_init_1_6 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 153 197 tgl 50 1 bt_send_1_9_1 bt_init_1_9 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 152 383 tgl 50 1 bt_send_1_7_1 bt_init_1_7 empty 17 7 0 10 -262144
@@ -1491,7 +1491,7 @@ patch. The default bpm is 122 bpm.;
 #X obj 216 255 t b f;
 #X obj 17 23 inlet increaseButtonSet;
 #X obj 209 22 inlet decreaseButtonSet;
-#X obj 484 73 loadbang;
+#X obj 484 23 loadbang;
 #X msg 484 113 2;
 #X text 519 114 number of different button sets;
 #X obj 484 142 s noOfButtSets;
@@ -1505,6 +1505,7 @@ patch. The default bpm is 122 bpm.;
 #X text 276 206 we always have at least on set of buttons;
 #X obj 209 204 moses 1;
 #X obj 128 275 loadbang;
+#X obj 484 69 delay 400;
 #X connect 0 0 1 0;
 #X connect 0 1 15 0;
 #X connect 1 0 2 0;
@@ -1519,7 +1520,7 @@ patch. The default bpm is 122 bpm.;
 #X connect 7 1 15 1;
 #X connect 8 0 0 0;
 #X connect 9 0 4 0;
-#X connect 10 0 11 0;
+#X connect 10 0 23 0;
 #X connect 11 0 13 0;
 #X connect 15 0 3 1;
 #X connect 15 0 1 1;
@@ -1531,6 +1532,7 @@ patch. The default bpm is 122 bpm.;
 #X connect 21 1 15 1;
 #X connect 21 1 7 0;
 #X connect 22 0 15 0;
+#X connect 23 0 11 0;
 #X coords 0 407 1 406 120 10 0;
 #X restore 972 159 pd buttonSetter;
 #X floatatom 972 180 5 0 0 0 - - -;
@@ -1554,7 +1556,7 @@ patch. The default bpm is 122 bpm.;
 #X text 162 942 id 1_1;
 #X text 176 843 id 1_2;
 #X obj 297 754 tgl 50 1 bt_send_3_3_1 bt_init_3_3 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 300 1065 tgl 50 1 bt_send_3_0_1 bt_init_3_0 empty 17 7 0 10
 -262144 -1 -1 0 1;
 #X obj 297 965 tgl 50 1 bt_send_3_1_1 bt_init_3_1 empty 17 7 0 10 -262144
@@ -1564,7 +1566,7 @@ patch. The default bpm is 122 bpm.;
 #X obj 299 867 tgl 50 1 bt_send_3_2_1 bt_init_3_2 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 295 299 tgl 50 1 bt_send_3_8_1 bt_init_3_8 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 298 575 tgl 50 1 bt_send_3_5_1 bt_init_3_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 294 481 tgl 50 1 bt_send_3_6_1 bt_init_3_6 empty 17 7 0 10 -262144
@@ -1580,7 +1582,7 @@ patch. The default bpm is 122 bpm.;
 #X obj 387 965 tgl 50 1 bt_send_4_1_1 bt_init_4_1 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 386 659 tgl 50 1 bt_send_4_4_1 bt_init_4_4 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 389 867 tgl 50 1 bt_send_4_2_1 bt_init_4_2 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 382 300 tgl 50 1 bt_send_4_8_1 bt_init_4_8 empty 17 7 0 10 -262144
@@ -1606,7 +1608,7 @@ patch. The default bpm is 122 bpm.;
 #X obj 467 581 tgl 50 1 bt_send_5_5_1 bt_init_5_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 469 302 tgl 50 1 bt_send_5_8_1 bt_init_5_8 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 468 484 tgl 50 1 bt_send_5_6_1 bt_init_5_6 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 470 203 tgl 50 1 bt_send_5_9_1 bt_init_5_9 empty 17 7 0 10 -262144
@@ -1630,7 +1632,7 @@ patch. The default bpm is 122 bpm.;
 #X obj 547 300 tgl 50 1 bt_send_6_8_1 bt_init_6_8 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 548 201 tgl 50 1 bt_send_6_9_1 bt_init_6_9 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 548 387 tgl 50 1 bt_send_6_7_1 bt_init_6_7 empty 17 7 0 10 -262144
 -1 -1 1 1;
 #X obj 621 760 tgl 50 1 bt_send_7_3_1 bt_init_7_3 empty 17 7 0 10 -262144
