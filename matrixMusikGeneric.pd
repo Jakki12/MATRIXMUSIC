@@ -571,11 +571,11 @@
 #X floatatom 823 786 5 0 0 0 - - -;
 #X obj 823 804 makenote 64 250;
 #X obj 89 1020 tgl 40 1 bt_send_0_0_1 bt_init_0_0 empty 0 7 0 10 -257985
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 89 935 tgl 50 1 bt_send_0_1_1 bt_init_0_1 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 87 654 tgl 50 1 bt_send_0_4_1 bt_init_0_4 empty 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 12 -184 loadbang;
 #X obj 11 41 s setToggleIds;
 #X obj 23 -158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1081,7 +1081,7 @@ send away your ToggleID to tabread;
 #X obj 155 567 tgl 50 1 bt_send_1_5_1 bt_init_1_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 152 483 tgl 50 1 bt_send_1_6_1 bt_init_1_6 empty 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 153 197 tgl 50 1 bt_send_1_9_1 bt_init_1_9 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 152 383 tgl 50 1 bt_send_1_7_1 bt_init_1_7 empty 17 7 0 10 -262144
@@ -1097,15 +1097,15 @@ send away your ToggleID to tabread;
 #X obj 222 866 tgl 50 1 bt_send_2_2_1 bt_init_2_2 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 218 300 tgl 50 1 bt_send_2_8_1 bt_init_2_8 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 221 576 tgl 50 1 bt_send_2_5_1 bt_init_2_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 217 482 tgl 50 1 bt_send_2_6_1 bt_init_2_6 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 219 201 tgl 50 1 bt_send_2_9_1 bt_init_2_9 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 219 387 tgl 50 1 bt_send_2_7_1 bt_init_2_7 empty 17 7 0 10 -262144
 -1 -1 1 1;
+#X obj 219 387 tgl 50 1 bt_send_2_7_1 bt_init_2_7 empty 17 7 0 10 -262144
+-1 -1 0 1;
 #X obj 782 91 bng 40 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 72 -70 122;
@@ -1556,9 +1556,9 @@ patch. The default bpm is 122 bpm.;
 #X text 162 942 id 1_1;
 #X text 176 843 id 1_2;
 #X obj 297 754 tgl 50 1 bt_send_3_3_1 bt_init_3_3 empty 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 300 1065 tgl 50 1 bt_send_3_0_1 bt_init_3_0 empty 17 7 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 1 1;
 #X obj 297 965 tgl 50 1 bt_send_3_1_1 bt_init_3_1 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 296 659 tgl 50 1 bt_send_3_4_1 bt_init_3_4 empty 17 7 0 10 -262144
@@ -1572,21 +1572,21 @@ patch. The default bpm is 122 bpm.;
 #X obj 294 481 tgl 50 1 bt_send_3_6_1 bt_init_3_6 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 296 200 tgl 50 1 bt_send_3_9_1 bt_init_3_9 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 296 386 tgl 50 1 bt_send_3_7_1 bt_init_3_7 empty 17 7 0 10 -262144
 -1 -1 1 1;
+#X obj 296 386 tgl 50 1 bt_send_3_7_1 bt_init_3_7 empty 17 7 0 10 -262144
+-1 -1 0 1;
 #X obj 387 754 tgl 50 1 bt_send_4_3_1 bt_init_4_3 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 390 1065 tgl 50 1 bt_send_4_0_1 bt_init_4_0 empty 17 7 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 1 1;
 #X obj 387 965 tgl 50 1 bt_send_4_1_1 bt_init_4_1 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 386 659 tgl 50 1 bt_send_4_4_1 bt_init_4_4 empty 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 389 867 tgl 50 1 bt_send_4_2_1 bt_init_4_2 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 382 300 tgl 50 1 bt_send_4_8_1 bt_init_4_8 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 385 576 tgl 50 1 bt_send_4_5_1 bt_init_4_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 381 482 tgl 50 1 bt_send_4_6_1 bt_init_4_6 empty 17 7 0 10 -262144
@@ -1594,17 +1594,17 @@ patch. The default bpm is 122 bpm.;
 #X obj 383 201 tgl 50 1 bt_send_4_9_1 bt_init_4_9 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 383 387 tgl 50 1 bt_send_4_7_1 bt_init_4_7 empty 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 469 759 tgl 50 1 bt_send_5_3_1 bt_init_5_3 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 472 1070 tgl 50 1 bt_send_5_0_1 bt_init_5_0 empty 17 7 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 1 1;
 #X obj 469 970 tgl 50 1 bt_send_5_1_1 bt_init_5_1 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 468 664 tgl 50 1 bt_send_5_4_1 bt_init_5_4 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 471 872 tgl 50 1 bt_send_5_2_1 bt_init_5_2 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 467 581 tgl 50 1 bt_send_5_5_1 bt_init_5_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 469 302 tgl 50 1 bt_send_5_8_1 bt_init_5_8 empty 17 7 0 10 -262144
@@ -1618,19 +1618,19 @@ patch. The default bpm is 122 bpm.;
 #X obj 547 760 tgl 50 1 bt_send_6_3_1 bt_init_6_3 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 550 1071 tgl 50 1 bt_send_6_0_1 bt_init_6_0 empty 17 7 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 1 1;
 #X obj 547 971 tgl 50 1 bt_send_6_1_1 bt_init_6_1 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 546 665 tgl 50 1 bt_send_6_4_1 bt_init_6_4 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 549 873 tgl 50 1 bt_send_6_2_1 bt_init_6_2 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 545 582 tgl 50 1 bt_send_6_5_1 bt_init_6_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 546 485 tgl 50 1 bt_send_6_6_1 bt_init_6_6 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 547 300 tgl 50 1 bt_send_6_8_1 bt_init_6_8 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 548 201 tgl 50 1 bt_send_6_9_1 bt_init_6_9 empty 17 7 0 10 -262144
 -1 -1 1 1;
 #X obj 548 387 tgl 50 1 bt_send_6_7_1 bt_init_6_7 empty 17 7 0 10 -262144
@@ -1638,26 +1638,30 @@ patch. The default bpm is 122 bpm.;
 #X obj 621 760 tgl 50 1 bt_send_7_3_1 bt_init_7_3 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 624 1071 tgl 50 1 bt_send_7_0_1 bt_init_7_0 empty 17 7 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 1 1;
 #X obj 621 971 tgl 50 1 bt_send_7_1_1 bt_init_7_1 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 620 665 tgl 50 1 bt_send_7_4_1 bt_init_7_4 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 623 873 tgl 50 1 bt_send_7_2_1 bt_init_7_2 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 619 582 tgl 50 1 bt_send_7_5_1 bt_init_7_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 624 484 tgl 50 1 bt_send_7_6_1 bt_init_7_6 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 625 299 tgl 50 1 bt_send_7_8_1 bt_init_7_8 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 626 200 tgl 50 1 bt_send_7_9_1 bt_init_7_9 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 626 386 tgl 50 1 bt_send_7_7_1 bt_init_7_7 empty 17 7 0 10 -262144
--1 -1 1 1;
-#X obj 790 465 r bt_send_0_1_1;
-#X obj 954 215 buttoninit 8 10;
-#X obj 1003 272 updatestepstatus 8 10;
+-1 -1 0 1;
+#X obj 999 252 buttoninit 8 10;
+#X obj 972 279 updatestepstatus 8 10;
+#X text 1104 239 change send symbol for each button \; in abhaengingkeit
+of the selected button set;
+#X obj 972 225 t f f;
+#X text 1123 280 update the matrix visual status' in abhaengigkeit
+\; of the selected button set.;
 #X connect 0 0 65 0;
 #X connect 0 0 65 1;
 #X connect 0 0 68 0;
@@ -1695,10 +1699,11 @@ patch. The default bpm is 122 bpm.;
 #X connect 70 0 68 2;
 #X connect 71 0 72 0;
 #X connect 72 0 73 0;
-#X connect 73 0 143 0;
-#X connect 73 0 144 0;
+#X connect 73 0 145 0;
 #X connect 74 0 72 1;
 #X connect 77 0 12 0;
 #X connect 77 1 45 0;
 #X connect 77 2 4 0;
 #X connect 77 3 43 0;
+#X connect 145 0 143 0;
+#X connect 145 1 142 0;
