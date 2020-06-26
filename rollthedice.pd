@@ -1,0 +1,39 @@
+#N canvas 529 221 860 499 10;
+#X text 324 117 probability to bang left outlet;
+#X obj 168 151 random 100;
+#X obj 168 259 expr $f1 <= $f2;
+#X floatatom 330 186 5 0 0 0 - - -, f 5;
+#X text 295 230 check if randomly generated value is \; in interval
+[1 \; probability]. It will be \; in this intervall with the probability
+of \; the incoming probability.;
+#X obj 168 310 sel 1, f 41;
+#X text 11 345 probability fulfilled;
+#X obj 168 346 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 452 343 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 492 337 probability not fullfilled;
+#X floatatom 187 281 5 0 0 0 - - -, f 5;
+#X obj 168 120 t b f, f 15;
+#X obj 168 194 + 1;
+#X floatatom 189 228 5 0 0 0 - - -, f 5;
+#X text 480 30 valence = probability;
+#X obj 168 84 f 0;
+#X obj 168 39 inlet RTD_metroBangs;
+#X obj 343 30 inlet RTD_valence;
+#X obj 168 390 outlet RTD_playBaseNote;
+#X obj 452 390 outlet RTD_playDifferentNote;
+#X connect 1 0 12 0;
+#X connect 2 0 10 0;
+#X connect 2 0 5 0;
+#X connect 5 0 7 0;
+#X connect 5 1 8 0;
+#X connect 7 0 18 0;
+#X connect 8 0 19 0;
+#X connect 11 0 1 0;
+#X connect 11 1 2 1;
+#X connect 12 0 2 0;
+#X connect 12 0 13 0;
+#X connect 15 0 11 0;
+#X connect 16 0 15 0;
+#X connect 17 0 15 1;
