@@ -1,224 +1,701 @@
 #N canvas 0 23 1280 750 10;
-#X obj 87 500 tgl 50 1 bt_send_0_3_2 bt_init_0_3 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 672 tgl 50 1 bt_send_0_0_2 bt_init_0_0 empty 0 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 615 tgl 50 1 bt_send_0_1_2 bt_init_0_1 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 441 tgl 50 1 bt_send_0_4_2 bt_init_0_4 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 558 tgl 50 1 bt_send_0_2_2 bt_init_0_2 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 210 tgl 50 1 bt_send_0_8_2 bt_init_0_8 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 384 tgl 50 1 bt_send_0_5_2 bt_init_0_5 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 326 tgl 50 1 bt_send_0_6_2 bt_init_0_6 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 154 tgl 50 1 bt_send_0_9_2 bt_init_0_9 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 87 267 tgl 50 1 bt_send_0_7_2 bt_init_0_7 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 501 tgl 50 1 bt_send_1_3_2 bt_init_1_3 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 672 tgl 50 1 bt_send_1_0_2 bt_init_1_0 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 615 tgl 50 1 bt_send_1_1_2 bt_init_1_1 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 444 tgl 50 1 bt_send_1_4_2 bt_init_1_4 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 559 tgl 50 1 bt_send_1_2_2 bt_init_1_2 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 210 tgl 50 1 bt_send_1_8_2 bt_init_1_8 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 386 tgl 50 1 bt_send_1_5_2 bt_init_1_5 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 328 tgl 50 1 bt_send_1_6_2 bt_init_1_6 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 154 tgl 50 1 bt_send_1_9_2 bt_init_1_9 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 153 268 tgl 50 1 bt_send_1_7_2 bt_init_1_7 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 500 tgl 50 1 bt_send_2_3_2 bt_init_2_3 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 672 tgl 50 1 bt_send_2_0_2 bt_init_2_0 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 615 tgl 50 1 bt_send_2_1_2 bt_init_2_1 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 444 tgl 50 1 bt_send_2_4_2 bt_init_2_4 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 217 559 tgl 50 1 bt_send_2_2_2 bt_init_2_2 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 210 tgl 50 1 bt_send_2_8_2 bt_init_2_8 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 386 tgl 50 1 bt_send_2_5_2 bt_init_2_5 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 328 tgl 50 1 bt_send_2_6_2 bt_init_2_6 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 154 tgl 50 1 bt_send_2_9_2 bt_init_2_9 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 216 269 tgl 50 1 bt_send_2_7_2 bt_init_2_7 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 871 1215 r setBpm;
-#X floatatom 904 1263 5 0 0 0 - - -;
-#X obj 549 72 cnv 50 60 60 empty StepSeqColor7 empty 20 12 0 14 -225271
--66577 0;
-#N canvas 281 243 649 492 beatdly1f 0;
-#X obj -7 195 inlet~;
-#X obj 231 147 inlet;
-#X obj 25 593 outlet~;
-#X obj 130 230 pow -1;
-#X obj 151 268 / 4;
-#X obj 182 297 *;
-#X obj 166 333 * 60000;
-#X obj 68 49 hsl 96 20 0 1 0 1 empty empty Feedbk -60 10 0 15 -258113
--1 -1 7300 1;
-#X text 233 41 beatsynced delay with feedback;
-#X obj 99 14 nbx 2 20 0 32 0 1 empty empty empty 0 -8 0 14 -262144
--1 -1 32 256;
-#X text 268 148 <- bpm in;
-#X obj 100 201 float;
-#X obj 104 159 t b f;
-#X obj 68 79 hsl 96 20 20 5000 1 1 empty empty Freq -60 10 0 15 -4160
--262144 -1 3000 1;
-#X obj 80 387 abs_delayline1filt;
-#X obj 68 108 hsl 96 20 0 1 0 1 empty empty DryWet -60 10 0 15 -257985
--1 -1 9100 1;
-#X obj 26 569 +~;
-#X obj 48 539 *~;
-#X obj -23 535 *~;
-#X obj -7 487 * -1;
-#X obj -7 511 + 1;
-#X text -70 459 simple crossfader (or dry/wet slider);
-#X text 258 69 by Martin Brinkmann!!;
-#X connect 0 0 14 0;
-#X connect 0 0 18 0;
-#X connect 1 0 11 0;
-#X connect 3 0 4 0;
-#X connect 4 0 5 0;
-#X connect 5 0 6 0;
-#X connect 6 0 14 1;
-#X connect 7 0 14 2;
-#X connect 9 0 12 0;
-#X connect 11 0 3 0;
-#X connect 12 0 11 0;
-#X connect 12 1 5 1;
-#X connect 13 0 14 3;
-#X connect 14 0 17 0;
-#X connect 15 0 19 0;
-#X connect 15 0 17 1;
-#X connect 16 0 2 0;
+#N canvas 14 31 1201 742 control 1;
+#X obj 887 167 makenote 64 250;
+#N canvas 324 127 774 514 Bpm 0;
+#X floatatom 264 323 5 0 0 0 - - -;
+#X obj 228 356 metro;
+#X obj 228 377 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 228 248 t b b b;
+#X obj 251 300 /;
+#X msg 251 278 60000;
+#X msg 40 158 0;
+#X obj 298 298 * 4;
+#X obj 40 183 t f f;
+#X obj 40 214 s resetCounter;
+#X obj 40 20 inlet startStopMetro;
+#X obj 40 83 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 40 131 moses 1;
+#X obj 298 274 f 0;
+#X floatatom 328 205 5 0 0 0 - - -;
+#X obj 228 24 inlet increaseBpm;
+#X obj 365 24 inlet decreaseBpm;
+#N canvas 393 133 793 502 My_RSP_BPM_SETTER 0;
+#X obj 17 219 t b b;
+#X obj 17 259 f;
+#X obj 17 281 + 1;
+#X floatatom 90 442 5 0 0 0 - - -;
+#X obj 209 271 f;
+#X obj 209 219 t b b;
+#X obj 209 291 - 1;
+#X obj 17 304 t b f;
+#X obj 209 310 t b f;
+#X text 429 159 26th November 2018 \; This patch has two inlets \;
+When the first inlet receives \; a bang \, it increases the current
+bpm \; by 1 The second inlet decreases the \; current bpm analogically.
+The current \; bpm is shown on the blue BPM-Canvas on \; the parent
+patch. The default bpm is 122 bpm.;
+#X obj 17 140 inlet increaseBpmBang;
+#X obj 209 140 inlet decreaseBpmBang;
+#X obj 90 343 f 0;
+#X obj 108 254 r bpmInit;
+#X msg 90 498 \; currentBpm label \$1;
+#X obj 90 367 t f f;
+#X obj 122 414 outlet currentBPM;
+#X obj 90 191 loadbang;
+#X obj 90 222 delay 200;
+#X obj 90 467 makefilename %d_BPM;
+#X connect 0 0 1 0;
+#X connect 0 1 12 0;
+#X connect 1 0 2 0;
+#X connect 2 0 7 0;
+#X connect 3 0 19 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 5 1 12 0;
+#X connect 6 0 8 0;
+#X connect 6 0 12 1;
+#X connect 7 0 12 0;
+#X connect 7 1 12 1;
+#X connect 8 0 12 0;
+#X connect 8 1 12 1;
+#X connect 10 0 0 0;
+#X connect 11 0 5 0;
+#X connect 12 0 4 1;
+#X connect 12 0 1 1;
+#X connect 12 0 15 0;
+#X connect 13 0 12 1;
+#X connect 15 0 3 0;
+#X connect 15 1 16 0;
+#X connect 17 0 18 0;
+#X connect 18 0 12 0;
+#X connect 19 0 14 0;
+#X coords 0 502 1 501 100 84 0;
+#X restore 228 80 pd My_RSP_BPM_SETTER;
+#X obj 40 101 t f f;
+#X obj 228 153 f 0;
+#X obj 228 174 moses 1;
+#X obj 228 114 t b f f;
+#X obj 274 138 s setBpm;
+#X obj 262 425 + 1;
+#X obj 639 629 s resetCounter;
+#X obj 246 403 r resetCounter;
+#X floatatom 353 527 5 0 0 0 - - -;
+#X obj 228 424 f 0;
+#X obj 353 548 moses 7;
+#X msg 639 607 0;
+#X obj 549 652 outlet SequencerTimesFour;
+#X obj 228 456 t f f;
+#X obj 228 485 % 4;
+#X obj 228 562 moses 1;
+#X obj 595 609 t f f;
+#X obj 316 185 r bpmInit;
+#X obj 316 241 t f f;
+#X obj 348 264 s setBpm;
+#X obj 455 558 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 117 749 s BPM_metroBangs;
+#X obj 117 722 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 289 549 moses 1;
+#X obj 228 537 == 0;
+#X obj 289 527 == 1;
+#X msg 233 672 \; currentBpm color 8 \; currentButtonSet_Rcv color
+8 \; currentTranspoFactor color 8;
+#X msg 418 713 \; currentBpm color 7 \; currentButtonSet_Rcv color
+7 \; currentTranspoFactor color 7;
+#X connect 1 0 2 0;
+#X connect 2 0 27 0;
+#X connect 3 0 1 0;
+#X connect 3 1 5 0;
+#X connect 3 2 13 0;
+#X connect 4 0 0 0;
+#X connect 4 0 1 1;
+#X connect 5 0 4 0;
+#X connect 6 0 8 0;
+#X connect 7 0 4 1;
+#X connect 8 0 9 0;
+#X connect 8 1 1 0;
+#X connect 10 0 11 0;
+#X connect 11 0 18 0;
+#X connect 12 0 6 0;
+#X connect 12 1 3 0;
+#X connect 13 0 7 0;
+#X connect 15 0 17 0;
+#X connect 16 0 17 1;
+#X connect 17 0 21 0;
+#X connect 18 0 12 0;
+#X connect 18 1 19 1;
+#X connect 19 0 20 0;
+#X connect 20 1 3 0;
+#X connect 21 0 19 0;
+#X connect 21 1 13 1;
+#X connect 21 2 22 0;
+#X connect 23 0 27 1;
+#X connect 25 0 27 1;
+#X connect 26 0 28 0;
+#X connect 27 0 23 0;
+#X connect 27 0 31 0;
+#X connect 28 0 30 0;
+#X connect 28 1 34 0;
+#X connect 29 0 24 0;
+#X connect 31 0 32 0;
+#X connect 31 1 26 0;
+#X connect 32 0 42 0;
+#X connect 32 0 43 0;
+#X connect 33 1 44 0;
+#X connect 33 1 40 0;
+#X connect 34 0 30 0;
+#X connect 34 1 29 0;
+#X connect 35 0 14 0;
+#X connect 35 0 36 0;
+#X connect 36 0 13 1;
+#X connect 36 1 37 0;
+#X connect 40 0 39 0;
+#X connect 41 1 45 0;
+#X connect 42 0 33 0;
+#X connect 43 0 41 0;
+#X coords 0 514 1 513 120 10 0;
+#X restore 887 -16 pd Bpm;
+#N canvas 134 29 1061 516 Sequencer 0;
+#X obj 56 68 inlet metroCount;
+#X obj 46 565 outlet Step0;
+#X obj 139 565 outlet Step1;
+#X obj 231 565 outlet Step2;
+#X obj 326 565 outlet Step3;
+#X obj 419 565 outlet Step4;
+#X obj 511 565 outlet Step5;
+#X obj 605 565 outlet Step6;
+#X obj 697 565 outlet Step7;
+#X obj 168 144 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 238 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 308 142 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 388 142 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 468 142 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 88 370 0;
+#X obj 56 167 t b b;
+#X msg 56 370 7;
+#X msg 774 233 \; StepSeqColor\$1 color 14;
+#X msg 766 469 \; StepSeqColor\$1 color 6;
+#X obj 105 167 t b b;
+#X msg 137 346 1;
+#X msg 105 346 0;
+#X obj 56 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 105 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 168 167 t b b;
+#X msg 200 324 2;
+#X msg 168 324 1;
+#X obj 238 167 t b b;
+#X msg 270 304 3;
+#X msg 238 304 2;
+#X obj 308 167 t b b;
+#X msg 340 279 4;
+#X msg 308 279 3;
+#X obj 388 166 t b b;
+#X msg 420 257 5;
+#X msg 388 257 4;
+#X obj 468 167 t b b;
+#X msg 500 237 6;
+#X msg 468 237 5;
+#X obj 548 167 t b b;
+#X msg 580 213 7;
+#X msg 548 213 6;
+#X obj 548 142 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 56 97 route 0 1 2 3 4 5 6 7;
+#X text 956 246 On-Color;
+#X text 927 475 Off-Color;
+#X obj 88 501 t f f;
+#X obj 136 501 t f f;
+#X obj 200 499 t f f;
+#X obj 270 497 t f f;
+#X obj 340 494 t f f;
+#X obj 420 493 t f f;
+#X obj 500 492 t f f;
+#X obj 580 486 t f f;
+#X connect 0 0 43 0;
+#X connect 9 0 24 0;
+#X connect 10 0 27 0;
+#X connect 11 0 30 0;
+#X connect 12 0 33 0;
+#X connect 13 0 36 0;
+#X connect 14 0 46 0;
+#X connect 15 0 16 0;
+#X connect 15 1 14 0;
+#X connect 16 0 18 0;
+#X connect 19 0 21 0;
+#X connect 19 1 20 0;
+#X connect 20 0 47 0;
+#X connect 21 0 18 0;
+#X connect 22 0 15 0;
+#X connect 23 0 19 0;
+#X connect 24 0 26 0;
+#X connect 24 1 25 0;
+#X connect 25 0 48 0;
+#X connect 26 0 18 0;
+#X connect 27 0 29 0;
+#X connect 27 1 28 0;
+#X connect 28 0 49 0;
+#X connect 29 0 18 0;
+#X connect 30 0 32 0;
+#X connect 30 1 31 0;
+#X connect 31 0 50 0;
+#X connect 32 0 18 0;
+#X connect 33 0 35 0;
+#X connect 33 1 34 0;
+#X connect 34 0 51 0;
+#X connect 35 0 18 0;
+#X connect 36 0 38 0;
+#X connect 36 1 37 0;
+#X connect 37 0 52 0;
+#X connect 38 0 18 0;
+#X connect 39 0 41 0;
+#X connect 39 1 40 0;
+#X connect 40 0 53 0;
+#X connect 41 0 18 0;
+#X connect 42 0 39 0;
+#X connect 43 0 22 0;
+#X connect 43 1 23 0;
+#X connect 43 2 9 0;
+#X connect 43 3 10 0;
+#X connect 43 4 11 0;
+#X connect 43 5 12 0;
+#X connect 43 6 13 0;
+#X connect 43 7 42 0;
+#X connect 46 0 1 0;
+#X connect 46 1 17 0;
+#X connect 47 0 2 0;
+#X connect 47 1 17 0;
+#X connect 48 0 3 0;
+#X connect 48 1 17 0;
+#X connect 49 0 4 0;
+#X connect 49 1 17 0;
+#X connect 50 0 5 0;
+#X connect 50 1 17 0;
+#X connect 51 0 6 0;
+#X connect 51 1 17 0;
+#X connect 52 0 7 0;
+#X connect 52 1 17 0;
+#X connect 53 0 8 0;
+#X connect 53 1 17 0;
+#X restore 887 7 pd Sequencer;
+#X f 30;
+#N canvas 268 218 1012 537 buttonSetter 0;
+#X obj 17 92 t b b;
+#X obj 17 132 f;
+#X obj 17 154 + 1;
+#X obj 209 135 f;
+#X obj 209 92 t b b;
+#X obj 209 167 - 1;
+#X obj 27 250 t b f;
+#X obj 216 245 t b f;
+#X obj 17 13 inlet increaseButtonSet;
+#X obj 209 12 inlet decreaseButtonSet;
+#X obj 484 13 loadbang;
+#X msg 484 103 2;
+#X text 519 104 number of different button sets;
+#X obj 484 132 s noOfButtSets;
+#X obj 128 500 outlet currentButtonSet;
+#X obj 128 296 f 1;
+#X obj 27 203 moses;
+#X obj 54 161 r noOfButtSets;
+#X obj 54 181 + 1;
+#X obj 54 229 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 276 196 we always have at least on set of buttons;
+#X obj 209 194 moses 1;
+#X obj 128 265 loadbang;
+#X obj 484 59 delay 400;
+#X obj 128 317 t f f;
+#X obj 210 386 makefilename %d;
+#X msg 210 407 \; currentButtonSet_Rcv label ButtonSet_\$1;
+#X connect 0 0 1 0;
+#X connect 0 1 15 0;
+#X connect 1 0 2 0;
+#X connect 2 0 16 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 4 1 15 0;
+#X connect 5 0 21 0;
+#X connect 6 0 15 0;
+#X connect 6 1 15 1;
+#X connect 7 0 15 0;
+#X connect 7 1 15 1;
+#X connect 8 0 0 0;
+#X connect 9 0 4 0;
+#X connect 10 0 23 0;
+#X connect 11 0 13 0;
+#X connect 15 0 3 1;
+#X connect 15 0 1 1;
+#X connect 15 0 24 0;
+#X connect 16 0 6 0;
+#X connect 16 1 19 0;
+#X connect 17 0 18 0;
+#X connect 18 0 16 1;
+#X connect 21 1 15 1;
+#X connect 21 1 7 0;
+#X connect 22 0 15 0;
+#X connect 23 0 11 0;
+#X connect 24 0 14 0;
+#X connect 24 1 25 0;
+#X connect 25 0 26 0;
+#X coords 0 537 1 536 120 10 0;
+#X restore 451 -17 pd buttonSetter;
+#X floatatom 451 4 5 0 0 0 - - -;
+#X obj 887 59 matrixprocessing 8 10;
+#X obj 485 137 buttoninit 8 10;
+#X obj 468 164 updatestepstatus 8 10;
+#X text 585 129 change send symbol for each button \; in abhaengingkeit
+of the selected button set;
+#N canvas 158 120 731 499 transposemanager 0;
+#X obj 58 85 inlet TM_midiNoteFromScaleArray;
+#X obj 320 268 * 12;
+#X obj 58 308 +;
+#X text 271 396 actual midi note = midiNoteFromArray + (12 * transposeFactor)
+;
+#X obj 58 407 outlet MP_actualMidiNoteToPlay;
+#X text 360 268 needs transposeFactorAsInput;
+#X obj 320 85 inlet TM_ButtonSetToGetTransposeFactorFrom;
+#X obj 320 221 array get TransposeStatusArray;
+#X text 419 191 number of values \; to get;
+#X msg 408 174 1;
+#X obj 320 144 - 1;
+#X floatatom 320 242 5 0 0 0 - - -;
+#X text 325 190 index to get \; value from;
+#X obj 320 121 t f b;
+#X text 530 221 get transpose factor for given \; button set;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 4 0;
+#X connect 6 0 13 0;
+#X connect 7 0 11 0;
+#X connect 9 0 7 1;
+#X connect 10 0 7 0;
+#X connect 11 0 1 0;
+#X connect 13 0 10 0;
+#X connect 13 1 9 0;
+#X restore 887 114 pd transposemanager;
+#X floatatom 887 141 5 0 0 0 - - -;
+#X obj 451 30 t f f f f;
+#N canvas 478 182 908 532 transposeStatus 0;
+#X obj 53 70 inlet TS_currentButtonSet;
+#X obj 261 70 inlet TS_transposeFactor;
+#X obj 300 199 f 0;
+#X obj 473 82 array define -yrange -4 4 TransposeStatusArray 100;
+#X text 600 103 (-)4=max transpose factors \; 100 initial size of array
+;
+#X floatatom 639 191 5 0 0 0 - - -;
+#X obj 639 157 r noOfButtSets;
+#X obj 639 211 array size TransposeStatusArray;
+#X text 712 176 size of array is reset \; on loadbang;
+#X obj 280 339 array set TransposeStatusArray;
+#X text 290 320 value;
+#X msg 599 188 2;
+#X text 332 209 remember latest button set \; buttonSet - 1 = index
+to write to;
+#X obj 300 221 - 1;
+#X text 267 114 a change in transpose factor \; changes status in array
+;
+#X floatatom 73 91 5 0 0 0 - - -;
+#X obj 53 320 array get TransposeStatusArray;
+#X msg 141 193 1;
+#X obj 53 163 - 1;
+#X obj 53 487 outlet TS_resetUpAndDownCounter;
+#X obj 53 142 t f b f;
+#X text 464 309 update array with transpose status \; also show current
+transpose status visually;
+#X obj 53 369 t f f;
+#X floatatom 53 341 5 0 0 0 - - -;
+#X obj 116 353 print;
+#X obj 261 164 t f f b;
+#X text 352 319 index;
+#X text 155 285 amount of values \; to get;
+#X text 56 282 start index \; to get values \; from;
+#X obj 261 428 makefilename transpose_%d;
+#X msg 261 451 \; currentTranspoFactor label \$1;
+#X connect 0 0 15 0;
+#X connect 0 0 20 0;
+#X connect 1 0 25 0;
+#X connect 2 0 13 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 0;
+#X connect 11 0 7 0;
+#X connect 13 0 9 1;
+#X connect 16 0 23 0;
 #X connect 17 0 16 1;
 #X connect 18 0 16 0;
-#X connect 19 0 20 0;
-#X connect 20 0 18 1;
-#X coords 0 -1 1 1 180 140 1 0 0;
-#X restore 720 1280 pd beatdly1f;
-#X obj 283 500 tgl 50 1 bt_send_3_3_2 bt_init_3_3 empty 17 7 0 10 -262144
+#X connect 20 0 18 0;
+#X connect 20 1 17 0;
+#X connect 20 2 2 1;
+#X connect 22 0 19 0;
+#X connect 22 1 29 0;
+#X connect 23 0 22 0;
+#X connect 25 0 29 0;
+#X connect 25 1 9 0;
+#X connect 25 2 2 0;
+#X connect 29 0 30 0;
+#X restore 502 55 pd transposeStatus;
+#X obj 502 96 s transposeUpdate;
+#X obj 735 -43 r transposeUpdate;
+#X floatatom 887 90 5 0 0 0 - - -;
+#X floatatom 509 76 5 0 0 0 - - -;
+#X text 553 77 curentButtonSet's transpose factor;
+#X floatatom 630 3 5 0 0 0 - - -;
+#X obj 630 -19 upanddowncounter 0;
+#X obj 908 459 dac~;
+#X obj 1576 333 r BPM_metroBangs;
+#X obj 1576 354 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1367 375 jakobsdelay;
+#X obj 1732 343 r setBpm;
+#X floatatom 1732 364 5 0 0 0 - - -;
+#X obj 887 -91 r startStopSequencer;
+#X obj 903 -71 r tempoUp;
+#X obj 920 -52 r tempoDown;
+#X obj 451 -86 r buttSetUp;
+#X obj 451 -56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 538 -65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 538 -86 r buttSetDown;
+#X obj 630 -87 r transpoUp;
+#X obj 630 -63 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 650 -45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 650 -64 r transpoDown;
+#X msg 43 122 \; pentatonicArray read pentatonicArray.txt;
+#X obj 12 -106 loadbang;
+#X obj 12 190 s setToggleIds;
+#X obj 23 -80 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 59 78 122;
+#X msg 27 156 \; pd dsp 1;
+#X obj 59 102 s bpmInit;
+#X msg 75 24 2;
+#X obj 75 46 s nmbrOfInstruments;
+#N canvas 141 168 675 463 (subpatch) 0;
+#X array pentatonicArray 80 float 3;
+#A 0 57 59 62 64 66 69 71 74 76 78 78 78 78 78 78 78 78 78 78 78 78
+78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78
+78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78
+78 78 78 78 78 78 78 78 78 78 78 78 78;
+#X coords 0 50 80 80 200 140 1 0 0;
+#X restore 213 -91 graph;
+#X text 600 159 update the matrix visual status' \; in abhaengigkeit
+of the selected \; button set.;
+#X obj 0 300 cnv 40 700 1050 empty empty empty 20 12 0 14 -203904 -66577
+0;
+#X obj 87 820 tgl 50 1 bt_send_0_3_2 bt_init_0_3 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 672 tgl 50 1 bt_send_3_0_2 bt_init_3_0 empty 17 7 0 10 -262144
+#X obj 87 992 tgl 50 1 bt_send_0_0_2 bt_init_0_0 empty 0 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 615 tgl 50 1 bt_send_3_1_2 bt_init_3_1 empty 17 7 0 10 -262144
+#X obj 87 935 tgl 50 1 bt_send_0_1_2 bt_init_0_1 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 444 tgl 50 1 bt_send_3_4_2 bt_init_3_4 empty 17 7 0 10 -262144
+#X obj 87 761 tgl 50 1 bt_send_0_4_2 bt_init_0_4 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 559 tgl 50 1 bt_send_3_2_2 bt_init_3_2 empty 17 7 0 10 -262144
+#X obj 87 878 tgl 50 1 bt_send_0_2_2 bt_init_0_2 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 210 tgl 50 1 bt_send_3_8_2 bt_init_3_8 empty 17 7 0 10 -262144
+#X obj 87 530 tgl 50 1 bt_send_0_8_2 bt_init_0_8 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 386 tgl 50 1 bt_send_3_5_2 bt_init_3_5 empty 17 7 0 10 -262144
+#X obj 87 704 tgl 50 1 bt_send_0_5_2 bt_init_0_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 329 tgl 50 1 bt_send_3_6_2 bt_init_3_6 empty 17 7 0 10 -262144
+#X obj 87 646 tgl 50 1 bt_send_0_6_2 bt_init_0_6 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 154 tgl 50 1 bt_send_3_9_2 bt_init_3_9 empty 17 7 0 10 -262144
+#X obj 87 474 tgl 50 1 bt_send_0_9_2 bt_init_0_9 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 283 269 tgl 50 1 bt_send_3_7_2 bt_init_3_7 empty 17 7 0 10 -262144
+#X obj 87 587 tgl 50 1 bt_send_0_7_2 bt_init_0_7 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 352 500 tgl 50 1 bt_send_4_3_2 bt_init_4_3 empty 17 7 0 10 -262144
+#X obj 153 821 tgl 50 1 bt_send_1_3_2 bt_init_1_3 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 352 672 tgl 50 1 bt_send_4_0_2 bt_init_4_0 empty 17 7 0 10 -262144
+#X obj 153 992 tgl 50 1 bt_send_1_0_2 bt_init_1_0 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 352 615 tgl 50 1 bt_send_4_1_2 bt_init_4_1 empty 17 7 0 10 -262144
+#X obj 153 935 tgl 50 1 bt_send_1_1_2 bt_init_1_1 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 352 444 tgl 50 1 bt_send_4_4_2 bt_init_4_4 empty 17 7 0 10 -262144
--1 -1 1 1;
-#X obj 352 559 tgl 50 1 bt_send_4_2_2 bt_init_4_2 empty 17 7 0 10 -262144
+#X obj 153 764 tgl 50 1 bt_send_1_4_2 bt_init_1_4 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 351 211 tgl 50 1 bt_send_4_8_2 bt_init_4_8 empty 17 7 0 10 -262144
+#X obj 153 879 tgl 50 1 bt_send_1_2_2 bt_init_1_2 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 351 387 tgl 50 1 bt_send_4_5_2 bt_init_4_5 empty 17 7 0 10 -262144
--1 -1 1 1;
-#X obj 351 330 tgl 50 1 bt_send_4_6_2 bt_init_4_6 empty 17 7 0 10 -262144
--1 -1 1 1;
-#X obj 351 155 tgl 50 1 bt_send_4_9_2 bt_init_4_9 empty 17 7 0 10 -262144
+#X obj 153 530 tgl 50 1 bt_send_1_8_2 bt_init_1_8 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 351 270 tgl 50 1 bt_send_4_7_2 bt_init_4_7 empty 17 7 0 10 -262144
+#X obj 153 706 tgl 50 1 bt_send_1_5_2 bt_init_1_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 422 502 tgl 50 1 bt_send_5_3_2 bt_init_5_3 empty 17 7 0 10 -262144
+#X obj 153 648 tgl 50 1 bt_send_1_6_2 bt_init_1_6 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 422 672 tgl 50 1 bt_send_5_0_2 bt_init_5_0 empty 17 7 0 10 -262144
+#X obj 153 474 tgl 50 1 bt_send_1_9_2 bt_init_1_9 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 422 615 tgl 50 1 bt_send_5_1_2 bt_init_5_1 empty 17 7 0 10 -262144
+#X obj 153 588 tgl 50 1 bt_send_1_7_2 bt_init_1_7 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 422 446 tgl 50 1 bt_send_5_4_2 bt_init_5_4 empty 17 7 0 10 -262144
+#X obj 216 820 tgl 50 1 bt_send_2_3_2 bt_init_2_3 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 422 559 tgl 50 1 bt_send_5_2_2 bt_init_5_2 empty 17 7 0 10 -262144
+#X obj 216 992 tgl 50 1 bt_send_2_0_2 bt_init_2_0 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 421 389 tgl 50 1 bt_send_5_5_2 bt_init_5_5 empty 17 7 0 10 -262144
+#X obj 216 935 tgl 50 1 bt_send_2_1_2 bt_init_2_1 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 420 212 tgl 50 1 bt_send_5_8_2 bt_init_5_8 empty 17 7 0 10 -262144
+#X obj 216 764 tgl 50 1 bt_send_2_4_2 bt_init_2_4 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 421 331 tgl 50 1 bt_send_5_6_2 bt_init_5_6 empty 17 7 0 10 -262144
+#X obj 217 879 tgl 50 1 bt_send_2_2_2 bt_init_2_2 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 419 155 tgl 50 1 bt_send_5_9_2 bt_init_5_9 empty 17 7 0 10 -262144
+#X obj 216 530 tgl 50 1 bt_send_2_8_2 bt_init_2_8 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 420 271 tgl 50 1 bt_send_5_7_2 bt_init_5_7 empty 17 7 0 10 -262144
+#X obj 216 706 tgl 50 1 bt_send_2_5_2 bt_init_2_5 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 489 503 tgl 50 1 bt_send_6_3_2 bt_init_6_3 empty 17 7 0 10 -262144
+#X obj 216 648 tgl 50 1 bt_send_2_6_2 bt_init_2_6 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 489 672 tgl 50 1 bt_send_6_0_2 bt_init_6_0 empty 17 7 0 10 -262144
+#X obj 216 474 tgl 50 1 bt_send_2_9_2 bt_init_2_9 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 489 616 tgl 50 1 bt_send_6_1_2 bt_init_6_1 empty 17 7 0 10 -262144
+#X obj 216 589 tgl 50 1 bt_send_2_7_2 bt_init_2_7 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 489 447 tgl 50 1 bt_send_6_4_2 bt_init_6_4 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 489 560 tgl 50 1 bt_send_6_2_2 bt_init_6_2 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 489 390 tgl 50 1 bt_send_6_5_2 bt_init_6_5 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 488 332 tgl 50 1 bt_send_6_6_2 bt_init_6_6 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 487 213 tgl 50 1 bt_send_6_8_2 bt_init_6_8 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 487 155 tgl 50 1 bt_send_6_9_2 bt_init_6_9 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 487 272 tgl 50 1 bt_send_6_7_2 bt_init_6_7 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 553 503 tgl 50 1 bt_send_7_3_2 bt_init_7_3 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 553 672 tgl 50 1 bt_send_7_0_2 bt_init_7_0 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 553 616 tgl 50 1 bt_send_7_1_2 bt_init_7_1 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 553 447 tgl 50 1 bt_send_7_4_2 bt_init_7_4 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 553 560 tgl 50 1 bt_send_7_2_2 bt_init_7_2 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 553 390 tgl 50 1 bt_send_7_5_2 bt_init_7_5 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 552 331 tgl 50 1 bt_send_7_6_2 bt_init_7_6 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 552 212 tgl 50 1 bt_send_7_8_2 bt_init_7_8 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 552 154 tgl 50 1 bt_send_7_9_2 bt_init_7_9 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 552 271 tgl 50 1 bt_send_7_7_2 bt_init_7_7 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 81 71 bng 62 250 50 0 startStopSequencer empty Start/Stop 1
--15 0 10 -262144 -1 -1;
-#X obj 82 72 cnv 50 60 60 empty StepSeqColor0 empty 20 12 0 14 -225271
+#X obj 549 392 cnv 50 60 60 empty StepSeqColor7 empty 20 12 0 14 -225271
 -66577 0;
-#N canvas 203 77 1201 687 control 1;
+#X obj 283 820 tgl 50 1 bt_send_3_3_2 bt_init_3_3 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 992 tgl 50 1 bt_send_3_0_2 bt_init_3_0 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 935 tgl 50 1 bt_send_3_1_2 bt_init_3_1 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 764 tgl 50 1 bt_send_3_4_2 bt_init_3_4 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 879 tgl 50 1 bt_send_3_2_2 bt_init_3_2 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 530 tgl 50 1 bt_send_3_8_2 bt_init_3_8 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 706 tgl 50 1 bt_send_3_5_2 bt_init_3_5 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 649 tgl 50 1 bt_send_3_6_2 bt_init_3_6 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 474 tgl 50 1 bt_send_3_9_2 bt_init_3_9 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 283 589 tgl 50 1 bt_send_3_7_2 bt_init_3_7 empty 17 7 0 10 -262144
+-1 -1 1 1;
+#X obj 352 820 tgl 50 1 bt_send_4_3_2 bt_init_4_3 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 352 992 tgl 50 1 bt_send_4_0_2 bt_init_4_0 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 352 935 tgl 50 1 bt_send_4_1_2 bt_init_4_1 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 352 764 tgl 50 1 bt_send_4_4_2 bt_init_4_4 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 352 879 tgl 50 1 bt_send_4_2_2 bt_init_4_2 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 351 531 tgl 50 1 bt_send_4_8_2 bt_init_4_8 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 351 707 tgl 50 1 bt_send_4_5_2 bt_init_4_5 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 351 650 tgl 50 1 bt_send_4_6_2 bt_init_4_6 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 351 475 tgl 50 1 bt_send_4_9_2 bt_init_4_9 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 351 590 tgl 50 1 bt_send_4_7_2 bt_init_4_7 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 422 822 tgl 50 1 bt_send_5_3_2 bt_init_5_3 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 422 992 tgl 50 1 bt_send_5_0_2 bt_init_5_0 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 422 935 tgl 50 1 bt_send_5_1_2 bt_init_5_1 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 422 766 tgl 50 1 bt_send_5_4_2 bt_init_5_4 empty 17 7 0 10 -262144
+-1 -1 1 1;
+#X obj 422 879 tgl 50 1 bt_send_5_2_2 bt_init_5_2 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 421 709 tgl 50 1 bt_send_5_5_2 bt_init_5_5 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 420 532 tgl 50 1 bt_send_5_8_2 bt_init_5_8 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 421 651 tgl 50 1 bt_send_5_6_2 bt_init_5_6 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 419 475 tgl 50 1 bt_send_5_9_2 bt_init_5_9 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 420 591 tgl 50 1 bt_send_5_7_2 bt_init_5_7 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 489 823 tgl 50 1 bt_send_6_3_2 bt_init_6_3 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 489 992 tgl 50 1 bt_send_6_0_2 bt_init_6_0 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 489 936 tgl 50 1 bt_send_6_1_2 bt_init_6_1 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 489 767 tgl 50 1 bt_send_6_4_2 bt_init_6_4 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 489 880 tgl 50 1 bt_send_6_2_2 bt_init_6_2 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 489 710 tgl 50 1 bt_send_6_5_2 bt_init_6_5 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 488 652 tgl 50 1 bt_send_6_6_2 bt_init_6_6 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 487 533 tgl 50 1 bt_send_6_8_2 bt_init_6_8 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 487 475 tgl 50 1 bt_send_6_9_2 bt_init_6_9 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 487 592 tgl 50 1 bt_send_6_7_2 bt_init_6_7 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 553 823 tgl 50 1 bt_send_7_3_2 bt_init_7_3 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 553 992 tgl 50 1 bt_send_7_0_2 bt_init_7_0 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 553 936 tgl 50 1 bt_send_7_1_2 bt_init_7_1 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 553 767 tgl 50 1 bt_send_7_4_2 bt_init_7_4 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 553 880 tgl 50 1 bt_send_7_2_2 bt_init_7_2 empty 17 7 0 10 -262144
+-1 -1 1 1;
+#X obj 553 710 tgl 50 1 bt_send_7_5_2 bt_init_7_5 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 552 651 tgl 50 1 bt_send_7_6_2 bt_init_7_6 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 552 532 tgl 50 1 bt_send_7_8_2 bt_init_7_8 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 552 474 tgl 50 1 bt_send_7_9_2 bt_init_7_9 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 552 591 tgl 50 1 bt_send_7_7_2 bt_init_7_7 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 81 391 bng 62 250 50 0 startStopSequencer empty Start/Stop 1
+-15 0 10 -262144 -1 -1;
+#X obj 82 392 cnv 50 60 60 empty StepSeqColor0 empty 20 12 0 14 -225271
+-66577 0;
+#X obj 148 391 bng 62 250 50 0 tempoUp empty tempoUp 10 -15 0 10 -262144
+-1 -1;
+#X obj 215 391 bng 62 250 50 0 tempoDown empty tempoDown 3 -15 0 10
+-262144 -1 -1;
+#X obj 149 392 cnv 50 60 60 empty StepSeqColor1 empty 20 12 0 14 -225271
+-66577 0;
+#X obj 216 392 cnv 50 60 60 empty StepSeqColor2 empty 20 12 0 14 -225271
+-66577 0;
+#X obj 281 391 bng 62 250 50 0 buttSetUp empty nextSet 11 -15 0 10
+-262144 -1 -1;
+#X obj 348 391 bng 62 250 50 0 buttSetDown empty prevSet 9 -15 0 10
+-203904 -1 -1;
+#X obj 282 392 cnv 50 60 60 empty StepSeqColor3 empty 20 12 0 14 -260818
+-66577 0;
+#X obj 349 392 cnv 50 60 60 empty StepSeqColor4 empty 20 12 0 14 -225271
+-66577 0;
+#X obj 150 337 cnv 15 125 30 empty currentBpm 122_BPM 35 15 0 14 -225280
+-66577 0;
+#X obj 283 337 cnv 15 125 30 empty currentButtonSet_Rcv ButtonSet_2
+20 15 0 14 -225280 -66577 0;
+#X obj 415 391 bng 62 250 50 0 transpoUp empty transpoUp 2 -15 0 10
+-262144 -1 -1;
+#X obj 416 392 cnv 50 60 60 empty StepSeqColor5 empty 20 12 0 14 -225271
+-66577 0;
+#X obj 482 391 bng 62 250 50 0 transpoDown empty transpoDown -2 -15
+0 10 -262144 -1 -1;
+#X obj 483 392 cnv 50 60 60 empty StepSeqColor6 empty 20 12 0 14 -225271
+-66577 0;
+#X obj 418 336 cnv 15 125 30 empty currentTranspoFactor transpose_0
+17 15 0 14 -225280 -66577 0;
+#X obj 1223 267 s instrSelect;
+#X msg 1223 226 1;
+#X msg 1261 227 2;
+#N canvas 0 23 823 637 instrument1 1;
+#X obj 90 73 inlet instr1_midiPitch;
+#X obj 277 75 inlet instr1_decay;
 #N canvas 64 102 954 630 poly_blip1 0;
 #N canvas 42 139 517 419 blip 0;
 #X obj 120 253 osc~;
@@ -774,592 +1251,157 @@
 #X connect 26 0 4 0;
 #X connect 27 0 14 0;
 #X coords 0 -1 1 1 111 60 1 100 100;
-#X restore 887 201 pd poly_blip1;
-#X obj 887 167 makenote 64 250;
-#N canvas 324 127 774 514 Bpm 0;
-#X floatatom 264 323 5 0 0 0 - - -;
-#X obj 228 356 metro;
-#X obj 228 377 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 228 248 t b b b;
-#X obj 251 300 /;
-#X msg 251 278 60000;
-#X msg 40 158 0;
-#X obj 298 298 * 4;
-#X obj 40 183 t f f;
-#X obj 40 214 s resetCounter;
-#X obj 40 20 inlet startStopMetro;
-#X obj 40 83 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
-#X obj 40 131 moses 1;
-#X obj 298 274 f 0;
-#X floatatom 328 205 5 0 0 0 - - -;
-#X obj 228 24 inlet increaseBpm;
-#X obj 365 24 inlet decreaseBpm;
-#N canvas 393 133 793 502 My_RSP_BPM_SETTER 0;
-#X obj 17 219 t b b;
-#X obj 17 259 f;
-#X obj 17 281 + 1;
-#X floatatom 90 442 5 0 0 0 - - -;
-#X obj 209 271 f;
-#X obj 209 219 t b b;
-#X obj 209 291 - 1;
-#X obj 17 304 t b f;
-#X obj 209 310 t b f;
-#X text 429 159 26th November 2018 \; This patch has two inlets \;
-When the first inlet receives \; a bang \, it increases the current
-bpm \; by 1 The second inlet decreases the \; current bpm analogically.
-The current \; bpm is shown on the blue BPM-Canvas on \; the parent
-patch. The default bpm is 122 bpm.;
-#X obj 17 140 inlet increaseBpmBang;
-#X obj 209 140 inlet decreaseBpmBang;
-#X obj 90 343 f 0;
-#X obj 108 254 r bpmInit;
-#X msg 90 498 \; currentBpm label \$1;
-#X obj 90 367 t f f;
-#X obj 122 414 outlet currentBPM;
-#X obj 90 191 loadbang;
-#X obj 90 222 delay 200;
-#X obj 90 467 makefilename %d_BPM;
-#X connect 0 0 1 0;
-#X connect 0 1 12 0;
-#X connect 1 0 2 0;
-#X connect 2 0 7 0;
-#X connect 3 0 19 0;
-#X connect 4 0 6 0;
-#X connect 5 0 4 0;
-#X connect 5 1 12 0;
-#X connect 6 0 8 0;
-#X connect 6 0 12 1;
-#X connect 7 0 12 0;
-#X connect 7 1 12 1;
-#X connect 8 0 12 0;
-#X connect 8 1 12 1;
-#X connect 10 0 0 0;
-#X connect 11 0 5 0;
-#X connect 12 0 4 1;
-#X connect 12 0 1 1;
-#X connect 12 0 15 0;
-#X connect 13 0 12 1;
-#X connect 15 0 3 0;
-#X connect 15 1 16 0;
-#X connect 17 0 18 0;
-#X connect 18 0 12 0;
-#X connect 19 0 14 0;
-#X coords 0 502 1 501 100 84 0;
-#X restore 228 80 pd My_RSP_BPM_SETTER;
-#X obj 40 101 t f f;
-#X obj 228 153 f 0;
-#X obj 228 174 moses 1;
-#X obj 228 114 t b f f;
-#X obj 274 138 s setBpm;
-#X obj 262 425 + 1;
-#X obj 639 629 s resetCounter;
-#X obj 246 403 r resetCounter;
-#X floatatom 353 527 5 0 0 0 - - -;
-#X obj 228 424 f 0;
-#X obj 353 548 moses 7;
-#X msg 639 607 0;
-#X obj 549 652 outlet SequencerTimesFour;
-#X obj 228 456 t f f;
-#X obj 228 485 % 4;
-#X obj 228 562 moses 1;
-#X obj 595 609 t f f;
-#X obj 316 185 r bpmInit;
-#X obj 316 241 t f f;
-#X obj 348 264 s setBpm;
-#X obj 455 558 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 117 749 s BPM_metroBangs;
-#X obj 117 722 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 289 549 moses 1;
-#X obj 228 537 == 0;
-#X obj 289 527 == 1;
-#X msg 233 672 \; currentBpm color 8 \; currentButtonSet_Rcv color
-8 \; currentTranspoFactor color 8;
-#X msg 418 713 \; currentBpm color 7 \; currentButtonSet_Rcv color
-7 \; currentTranspoFactor color 7;
-#X connect 1 0 2 0;
-#X connect 2 0 27 0;
-#X connect 3 0 1 0;
-#X connect 3 1 5 0;
-#X connect 3 2 13 0;
-#X connect 4 0 0 0;
-#X connect 4 0 1 1;
-#X connect 5 0 4 0;
-#X connect 6 0 8 0;
-#X connect 7 0 4 1;
-#X connect 8 0 9 0;
-#X connect 8 1 1 0;
-#X connect 10 0 11 0;
-#X connect 11 0 18 0;
-#X connect 12 0 6 0;
-#X connect 12 1 3 0;
-#X connect 13 0 7 0;
-#X connect 15 0 17 0;
-#X connect 16 0 17 1;
-#X connect 17 0 21 0;
-#X connect 18 0 12 0;
-#X connect 18 1 19 1;
-#X connect 19 0 20 0;
-#X connect 20 1 3 0;
-#X connect 21 0 19 0;
-#X connect 21 1 13 1;
-#X connect 21 2 22 0;
-#X connect 23 0 27 1;
-#X connect 25 0 27 1;
-#X connect 26 0 28 0;
-#X connect 27 0 23 0;
-#X connect 27 0 31 0;
-#X connect 28 0 30 0;
-#X connect 28 1 34 0;
-#X connect 29 0 24 0;
-#X connect 31 0 32 0;
-#X connect 31 1 26 0;
-#X connect 32 0 42 0;
-#X connect 32 0 43 0;
-#X connect 33 1 44 0;
-#X connect 33 1 40 0;
-#X connect 34 0 30 0;
-#X connect 34 1 29 0;
-#X connect 35 0 14 0;
-#X connect 35 0 36 0;
-#X connect 36 0 13 1;
-#X connect 36 1 37 0;
-#X connect 40 0 39 0;
-#X connect 41 1 45 0;
-#X connect 42 0 33 0;
-#X connect 43 0 41 0;
-#X coords 0 514 1 513 120 10 0;
-#X restore 887 -16 pd Bpm;
-#N canvas 134 29 1061 516 Sequencer 0;
-#X obj 56 68 inlet metroCount;
-#X obj 46 565 outlet Step0;
-#X obj 139 565 outlet Step1;
-#X obj 231 565 outlet Step2;
-#X obj 326 565 outlet Step3;
-#X obj 419 565 outlet Step4;
-#X obj 511 565 outlet Step5;
-#X obj 605 565 outlet Step6;
-#X obj 697 565 outlet Step7;
-#X obj 168 144 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 238 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 308 142 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 388 142 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 468 142 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 88 370 0;
-#X obj 56 167 t b b;
-#X msg 56 370 7;
-#X msg 774 233 \; StepSeqColor\$1 color 14;
-#X msg 766 469 \; StepSeqColor\$1 color 6;
-#X obj 105 167 t b b;
-#X msg 137 346 1;
-#X msg 105 346 0;
-#X obj 56 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 105 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 168 167 t b b;
-#X msg 200 324 2;
-#X msg 168 324 1;
-#X obj 238 167 t b b;
-#X msg 270 304 3;
-#X msg 238 304 2;
-#X obj 308 167 t b b;
-#X msg 340 279 4;
-#X msg 308 279 3;
-#X obj 388 166 t b b;
-#X msg 420 257 5;
-#X msg 388 257 4;
-#X obj 468 167 t b b;
-#X msg 500 237 6;
-#X msg 468 237 5;
-#X obj 548 167 t b b;
-#X msg 580 213 7;
-#X msg 548 213 6;
-#X obj 548 142 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 56 97 route 0 1 2 3 4 5 6 7;
-#X text 956 246 On-Color;
-#X text 927 475 Off-Color;
-#X obj 88 501 t f f;
-#X obj 136 501 t f f;
-#X obj 200 499 t f f;
-#X obj 270 497 t f f;
-#X obj 340 494 t f f;
-#X obj 420 493 t f f;
-#X obj 500 492 t f f;
-#X obj 580 486 t f f;
-#X connect 0 0 43 0;
-#X connect 9 0 24 0;
-#X connect 10 0 27 0;
-#X connect 11 0 30 0;
-#X connect 12 0 33 0;
-#X connect 13 0 36 0;
-#X connect 14 0 46 0;
-#X connect 15 0 16 0;
-#X connect 15 1 14 0;
-#X connect 16 0 18 0;
-#X connect 19 0 21 0;
-#X connect 19 1 20 0;
-#X connect 20 0 47 0;
-#X connect 21 0 18 0;
-#X connect 22 0 15 0;
-#X connect 23 0 19 0;
-#X connect 24 0 26 0;
-#X connect 24 1 25 0;
-#X connect 25 0 48 0;
-#X connect 26 0 18 0;
-#X connect 27 0 29 0;
-#X connect 27 1 28 0;
-#X connect 28 0 49 0;
-#X connect 29 0 18 0;
-#X connect 30 0 32 0;
-#X connect 30 1 31 0;
-#X connect 31 0 50 0;
-#X connect 32 0 18 0;
-#X connect 33 0 35 0;
-#X connect 33 1 34 0;
-#X connect 34 0 51 0;
-#X connect 35 0 18 0;
-#X connect 36 0 38 0;
-#X connect 36 1 37 0;
-#X connect 37 0 52 0;
-#X connect 38 0 18 0;
-#X connect 39 0 41 0;
-#X connect 39 1 40 0;
-#X connect 40 0 53 0;
-#X connect 41 0 18 0;
-#X connect 42 0 39 0;
-#X connect 43 0 22 0;
-#X connect 43 1 23 0;
-#X connect 43 2 9 0;
-#X connect 43 3 10 0;
-#X connect 43 4 11 0;
-#X connect 43 5 12 0;
-#X connect 43 6 13 0;
-#X connect 43 7 42 0;
-#X connect 46 0 1 0;
-#X connect 46 1 17 0;
-#X connect 47 0 2 0;
-#X connect 47 1 17 0;
-#X connect 48 0 3 0;
-#X connect 48 1 17 0;
-#X connect 49 0 4 0;
-#X connect 49 1 17 0;
-#X connect 50 0 5 0;
-#X connect 50 1 17 0;
-#X connect 51 0 6 0;
-#X connect 51 1 17 0;
-#X connect 52 0 7 0;
-#X connect 52 1 17 0;
-#X connect 53 0 8 0;
-#X connect 53 1 17 0;
-#X restore 887 7 pd Sequencer;
-#X f 30;
-#N canvas 268 218 1012 537 buttonSetter 0;
-#X obj 17 92 t b b;
-#X obj 17 132 f;
-#X obj 17 154 + 1;
-#X obj 209 135 f;
-#X obj 209 92 t b b;
-#X obj 209 167 - 1;
-#X obj 27 250 t b f;
-#X obj 216 245 t b f;
-#X obj 17 13 inlet increaseButtonSet;
-#X obj 209 12 inlet decreaseButtonSet;
-#X obj 484 13 loadbang;
-#X msg 484 103 2;
-#X text 519 104 number of different button sets;
-#X obj 484 132 s noOfButtSets;
-#X obj 128 500 outlet currentButtonSet;
-#X obj 128 296 f 1;
-#X obj 27 203 moses;
-#X obj 54 161 r noOfButtSets;
-#X obj 54 181 + 1;
-#X obj 54 229 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X text 276 196 we always have at least on set of buttons;
-#X obj 209 194 moses 1;
-#X obj 128 265 loadbang;
-#X obj 484 59 delay 400;
-#X obj 128 317 t f f;
-#X obj 210 386 makefilename %d;
-#X msg 210 407 \; currentButtonSet_Rcv label ButtonSet_\$1;
-#X connect 0 0 1 0;
-#X connect 0 1 15 0;
-#X connect 1 0 2 0;
-#X connect 2 0 16 0;
-#X connect 3 0 5 0;
-#X connect 4 0 3 0;
-#X connect 4 1 15 0;
-#X connect 5 0 21 0;
-#X connect 6 0 15 0;
-#X connect 6 1 15 1;
-#X connect 7 0 15 0;
-#X connect 7 1 15 1;
-#X connect 8 0 0 0;
-#X connect 9 0 4 0;
-#X connect 10 0 23 0;
-#X connect 11 0 13 0;
-#X connect 15 0 3 1;
-#X connect 15 0 1 1;
-#X connect 15 0 24 0;
-#X connect 16 0 6 0;
-#X connect 16 1 19 0;
-#X connect 17 0 18 0;
-#X connect 18 0 16 1;
-#X connect 21 1 15 1;
-#X connect 21 1 7 0;
-#X connect 22 0 15 0;
-#X connect 23 0 11 0;
-#X connect 24 0 14 0;
-#X connect 24 1 25 0;
-#X connect 25 0 26 0;
-#X coords 0 537 1 536 120 10 0;
-#X restore 451 -17 pd buttonSetter;
-#X floatatom 451 4 5 0 0 0 - - -;
-#X obj 887 59 matrixprocessing 8 10;
-#X obj 485 137 buttoninit 8 10;
-#X obj 468 164 updatestepstatus 8 10;
-#X text 585 129 change send symbol for each button \; in abhaengingkeit
-of the selected button set;
-#X obj 1002 169 instruments/coronaChallengeSynth;
-#N canvas 158 120 731 499 transposemanager 0;
-#X obj 58 85 inlet TM_midiNoteFromScaleArray;
-#X obj 320 268 * 12;
-#X obj 58 308 +;
-#X text 271 396 actual midi note = midiNoteFromArray + (12 * transposeFactor)
-;
-#X obj 58 407 outlet MP_actualMidiNoteToPlay;
-#X text 360 268 needs transposeFactorAsInput;
-#X obj 320 85 inlet TM_ButtonSetToGetTransposeFactorFrom;
-#X obj 320 221 array get TransposeStatusArray;
-#X text 419 191 number of values \; to get;
-#X msg 408 174 1;
-#X obj 320 144 - 1;
-#X floatatom 320 242 5 0 0 0 - - -;
-#X text 325 190 index to get \; value from;
-#X obj 320 121 t f b;
-#X text 530 221 get transpose factor for given \; button set;
+#X restore 90 141 pd poly_blip1;
+#X obj 90 496 outlet~ audio;
+#X obj 396 133 r instrSelect;
+#X obj 396 174 == 1;
+#X text 446 175 1 = instrument index \; the second instrument has a
+\; 2 in there.;
+#X obj 396 357 switch~;
+#X floatatom 396 195 5 0 0 0 - - -;
+#X text 446 357 switch on/off dsp for this instrument;
+#X obj 90 454 *~;
+#X floatatom 137 244 5 0 0 0 - - -;
+#X msg 448 229 0;
+#X msg 480 230 1;
+#X obj 396 333 f 0;
+#X obj 396 256 t b f f, f 30;
+#X obj 572 334 line~;
+#X obj 618 254 r smoothAudioChangeMs;
+#X floatatom 618 275 5 0 0 0 - - -;
+#X obj 573 298 pack f f;
+#X obj 396 304 delay;
+#X obj 423 280 r smoothAudioChangeMs;
 #X connect 0 0 2 0;
 #X connect 1 0 2 1;
-#X connect 2 0 4 0;
-#X connect 6 0 13 0;
-#X connect 7 0 11 0;
-#X connect 9 0 7 1;
-#X connect 10 0 7 0;
-#X connect 11 0 1 0;
-#X connect 13 0 10 0;
-#X connect 13 1 9 0;
-#X restore 887 114 pd transposemanager;
-#X floatatom 887 141 5 0 0 0 - - -;
-#X obj 451 30 t f f f f;
-#N canvas 478 182 908 532 transposeStatus 0;
-#X obj 53 70 inlet TS_currentButtonSet;
-#X obj 261 70 inlet TS_transposeFactor;
-#X obj 300 199 f 0;
-#X obj 473 82 array define -yrange -4 4 TransposeStatusArray 100;
-#X text 600 103 (-)4=max transpose factors \; 100 initial size of array
-;
-#X floatatom 639 191 5 0 0 0 - - -;
-#X obj 639 157 r noOfButtSets;
-#X obj 639 211 array size TransposeStatusArray;
-#X text 712 176 size of array is reset \; on loadbang;
-#X obj 280 339 array set TransposeStatusArray;
-#X text 290 320 value;
-#X msg 599 188 2;
-#X text 332 209 remember latest button set \; buttonSet - 1 = index
-to write to;
-#X obj 300 221 - 1;
-#X text 267 114 a change in transpose factor \; changes status in array
-;
-#X floatatom 73 91 5 0 0 0 - - -;
-#X obj 53 320 array get TransposeStatusArray;
-#X msg 141 193 1;
-#X obj 53 163 - 1;
-#X obj 53 487 outlet TS_resetUpAndDownCounter;
-#X obj 53 142 t f b f;
-#X text 464 309 update array with transpose status \; also show current
-transpose status visually;
-#X obj 53 369 t f f;
-#X floatatom 53 341 5 0 0 0 - - -;
-#X obj 116 353 print;
-#X obj 261 164 t f f b;
-#X text 352 319 index;
-#X text 155 285 amount of values \; to get;
-#X text 56 282 start index \; to get values \; from;
-#X obj 261 428 makefilename transpose_%d;
-#X msg 261 451 \; currentTranspoFactor label \$1;
-#X connect 0 0 15 0;
-#X connect 0 0 20 0;
-#X connect 1 0 25 0;
-#X connect 2 0 13 0;
-#X connect 5 0 7 0;
-#X connect 6 0 5 0;
-#X connect 11 0 7 0;
-#X connect 13 0 9 1;
-#X connect 16 0 23 0;
-#X connect 17 0 16 1;
-#X connect 18 0 16 0;
-#X connect 20 0 18 0;
-#X connect 20 1 17 0;
-#X connect 20 2 2 1;
-#X connect 22 0 19 0;
-#X connect 22 1 29 0;
-#X connect 23 0 22 0;
-#X connect 25 0 29 0;
-#X connect 25 1 9 0;
-#X connect 25 2 2 0;
-#X connect 29 0 30 0;
-#X restore 502 55 pd transposeStatus;
-#X obj 502 96 s transposeUpdate;
-#X obj 735 -43 r transposeUpdate;
-#X floatatom 887 90 5 0 0 0 - - -;
-#X floatatom 509 76 5 0 0 0 - - -;
-#X text 553 77 curentButtonSet's transpose factor;
-#X floatatom 630 3 5 0 0 0 - - -;
-#X obj 630 -19 upanddowncounter 0;
-#X obj 1160 746 dac~;
-#X obj 1029 553 r BPM_metroBangs;
-#X obj 1029 574 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 820 595 jakobsdelay;
-#X obj 1185 563 r setBpm;
-#X floatatom 1185 584 5 0 0 0 - - -;
-#X obj 887 -91 r startStopSequencer;
-#X obj 903 -71 r tempoUp;
-#X obj 920 -52 r tempoDown;
-#X obj 451 -86 r buttSetUp;
-#X obj 451 -56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 538 -65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 538 -86 r buttSetDown;
-#X obj 630 -87 r transpoUp;
-#X obj 630 -63 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 650 -45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 650 -64 r transpoDown;
-#X msg 43 122 \; pentatonicArray read pentatonicArray.txt;
-#X obj 12 -106 loadbang;
-#X obj 12 190 s setToggleIds;
-#X obj 23 -80 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X msg 59 78 122;
-#X msg 27 156 \; pd dsp 1;
-#X obj 59 102 s bpmInit;
-#X obj 12 -52 t b b b b b;
-#X msg 75 -6 2;
-#X obj 75 16 s nmbrOfInstruments;
-#N canvas 141 168 675 463 (subpatch) 0;
-#X array pentatonicArray 80 float 3;
-#A 0 57 59 62 64 66 69 71 74 76 78 78 78 78 78 78 78 78 78 78 78 78
-78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78
-78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78
-78 78 78 78 78 78 78 78 78 78 78 78 78;
-#X coords 0 50 80 80 200 140 1 0 0;
-#X restore 213 -91 graph;
-#X text 600 159 update the matrix visual status' \; in abhaengigkeit
-of the selected \; button set.;
-#X connect 0 0 25 0;
-#X connect 0 0 25 1;
-#X connect 1 0 0 0;
-#X connect 1 1 0 1;
-#X connect 2 0 3 0;
-#X connect 3 0 6 0;
-#X connect 3 1 6 0;
-#X connect 3 2 6 0;
-#X connect 3 3 6 0;
-#X connect 3 4 6 0;
-#X connect 3 5 6 0;
-#X connect 3 6 6 0;
-#X connect 3 7 6 0;
+#X connect 2 0 10 0;
 #X connect 4 0 5 0;
-#X connect 5 0 13 0;
-#X connect 6 0 17 0;
-#X connect 6 1 11 1;
-#X connect 10 0 25 0;
-#X connect 10 1 25 1;
+#X connect 5 0 8 0;
+#X connect 8 0 15 0;
+#X connect 10 0 3 0;
+#X connect 11 0 10 1;
+#X connect 12 0 15 0;
+#X connect 13 0 15 0;
+#X connect 14 0 7 0;
+#X connect 15 0 20 0;
+#X connect 15 1 14 1;
+#X connect 15 2 19 0;
+#X connect 16 0 10 1;
+#X connect 17 0 18 0;
+#X connect 18 0 19 1;
+#X connect 19 0 16 0;
+#X connect 20 0 14 0;
+#X connect 21 0 20 1;
+#X restore 908 295 pd instrument1;
+#N canvas 0 23 788 532 instrument2 1;
+#X obj 90 73 inlet instr2_midiPitch;
+#X obj 90 131 instruments/coronaChallengeSynth;
+#X obj 90 486 outlet~ audioLeft;
+#X obj 208 485 outlet~ audioRight;
+#X obj 396 63 r instrSelect;
+#X text 446 105 1 = instrument index \; the second instrument has a
+\; 2 in there.;
+#X obj 396 287 switch~;
+#X floatatom 396 125 5 0 0 0 - - -;
+#X obj 396 263 f 0;
+#X obj 396 186 t b f f, f 30;
+#X obj 573 324 line~;
+#X obj 618 204 r smoothAudioChangeMs;
+#X floatatom 618 225 5 0 0 0 - - -;
+#X obj 573 248 pack f f;
+#X obj 396 234 delay;
+#X obj 423 210 r smoothAudioChangeMs;
+#X obj 396 104 == 2;
+#X obj 90 420 *~;
+#X obj 208 422 *~;
+#X text 446 287 switch on/off dsp \; for this instrument;
+#X connect 0 0 1 0;
+#X connect 1 0 17 0;
+#X connect 1 1 18 0;
+#X connect 4 0 16 0;
+#X connect 7 0 9 0;
+#X connect 8 0 6 0;
+#X connect 9 0 14 0;
+#X connect 9 1 8 1;
+#X connect 9 2 13 0;
+#X connect 10 0 18 1;
+#X connect 10 0 17 1;
 #X connect 11 0 12 0;
-#X connect 12 0 1 0;
-#X connect 12 0 10 0;
-#X connect 13 1 8 0;
-#X connect 13 2 7 0;
-#X connect 13 3 14 0;
-#X connect 14 0 15 0;
-#X connect 14 0 18 0;
-#X connect 16 0 21 2;
-#X connect 17 0 11 0;
-#X connect 20 0 14 1;
-#X connect 21 0 20 0;
-#X connect 23 0 24 0;
-#X connect 24 0 25 2;
-#X connect 25 0 22 0;
-#X connect 25 1 22 1;
-#X connect 26 0 27 0;
-#X connect 27 0 25 3;
-#X connect 28 0 2 0;
-#X connect 29 0 2 1;
-#X connect 30 0 2 2;
-#X connect 31 0 32 0;
-#X connect 32 0 4 0;
-#X connect 33 0 4 1;
-#X connect 34 0 33 0;
-#X connect 35 0 36 0;
-#X connect 36 0 21 0;
-#X connect 37 0 21 1;
-#X connect 38 0 37 0;
-#X connect 40 0 46 0;
-#X connect 42 0 46 0;
-#X connect 43 0 45 0;
-#X connect 46 0 41 0;
-#X connect 46 1 44 0;
-#X connect 46 2 39 0;
-#X connect 46 3 43 0;
-#X connect 46 4 47 0;
-#X connect 47 0 48 0;
-#X coords 0 -1 1 1 700 1050 1 0 300;
-#X restore 808 -64 pd control;
-#X obj 148 71 bng 62 250 50 0 tempoUp empty tempoUp 10 -15 0 10 -262144
--1 -1;
-#X obj 215 71 bng 62 250 50 0 tempoDown empty tempoDown 3 -15 0 10
--262144 -1 -1;
-#X obj 149 72 cnv 50 60 60 empty StepSeqColor1 empty 20 12 0 14 -225271
--66577 0;
-#X obj 216 72 cnv 50 60 60 empty StepSeqColor2 empty 20 12 0 14 -225271
--66577 0;
-#X obj 281 71 bng 62 250 50 0 buttSetUp empty nextSet 11 -15 0 10 -262144
--1 -1;
-#X obj 348 71 bng 62 250 50 0 buttSetDown empty prevSet 9 -15 0 10
--203904 -1 -1;
-#X obj 282 72 cnv 50 60 60 empty StepSeqColor3 empty 20 12 0 14 -225271
--66577 0;
-#X obj 349 72 cnv 50 60 60 empty StepSeqColor4 empty 20 12 0 14 -225271
--66577 0;
-#X obj 150 17 cnv 15 125 30 empty currentBpm 127_BPM 35 15 0 14 -225280
--66577 0;
-#X obj 283 17 cnv 15 125 30 empty currentButtonSet_Rcv ButtonSet_2
-20 15 0 14 -225280 -66577 0;
-#X obj 415 71 bng 62 250 50 0 transpoUp empty transpoUp 2 -15 0 10
--262144 -1 -1;
-#X obj 416 72 cnv 50 60 60 empty StepSeqColor5 empty 20 12 0 14 -225271
--66577 0;
-#X obj 482 71 bng 62 250 50 0 transpoDown empty transpoDown -2 -15
-0 10 -262144 -1 -1;
-#X obj 483 72 cnv 50 60 60 empty StepSeqColor6 empty 20 12 0 14 -260818
--66577 0;
-#X obj 418 16 cnv 15 125 30 empty currentTranspoFactor transpose_-1
-17 15 0 14 -225280 -66577 0;
+#X connect 12 0 13 1;
+#X connect 13 0 10 0;
+#X connect 14 0 8 0;
+#X connect 15 0 14 1;
+#X connect 16 0 7 0;
+#X connect 17 0 2 0;
+#X connect 18 0 3 0;
+#X restore 1012 297 pd instrument2;
+#X obj 12 -52 t b b b b b b;
+#X text 124 -33 ms for smooth \; instrument changes;
+#X obj 87 -2 s smoothAudioChangeMs;
+#X msg 87 -24 200;
+#X connect 0 0 150 0;
+#X connect 0 0 151 0;
+#X connect 0 1 150 1;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 2 1 5 0;
+#X connect 2 2 5 0;
+#X connect 2 3 5 0;
+#X connect 2 4 5 0;
+#X connect 2 5 5 0;
+#X connect 2 6 5 0;
+#X connect 2 7 5 0;
+#X connect 3 0 4 0;
+#X connect 4 0 11 0;
+#X connect 5 0 15 0;
+#X connect 5 1 9 1;
+#X connect 9 0 10 0;
+#X connect 10 0 0 0;
+#X connect 11 1 7 0;
+#X connect 11 2 6 0;
+#X connect 11 3 12 0;
+#X connect 12 0 13 0;
+#X connect 12 0 16 0;
+#X connect 14 0 19 2;
+#X connect 15 0 9 0;
+#X connect 18 0 12 1;
+#X connect 19 0 18 0;
+#X connect 21 0 22 0;
+#X connect 22 0 23 2;
+#X connect 23 0 20 0;
+#X connect 23 1 20 1;
+#X connect 24 0 25 0;
+#X connect 25 0 23 3;
+#X connect 26 0 1 0;
+#X connect 27 0 1 1;
+#X connect 28 0 1 2;
+#X connect 29 0 30 0;
+#X connect 30 0 3 0;
+#X connect 31 0 3 1;
+#X connect 32 0 31 0;
+#X connect 33 0 34 0;
+#X connect 34 0 19 0;
+#X connect 35 0 19 1;
+#X connect 36 0 35 0;
+#X connect 38 0 152 0;
+#X connect 40 0 152 0;
+#X connect 41 0 43 0;
+#X connect 44 0 45 0;
+#X connect 148 0 147 0;
+#X connect 149 0 147 0;
+#X connect 150 0 20 0;
+#X connect 150 0 20 1;
+#X connect 151 0 20 0;
+#X connect 151 1 20 1;
+#X connect 152 0 39 0;
+#X connect 152 1 42 0;
+#X connect 152 2 37 0;
+#X connect 152 3 41 0;
+#X connect 152 4 44 0;
+#X connect 152 5 155 0;
+#X connect 155 0 154 0;
+#X coords 0 -1 1 1 700 1050 2 0 300;
+#X restore 26 -75 pd control;
 #X obj 588 -125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X text 487 -154 change instrument of selected button set;
-#X connect 30 0 31 0;
-#X connect 30 0 33 1;
