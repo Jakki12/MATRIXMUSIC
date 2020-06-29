@@ -1,47 +1,47 @@
 #N canvas 317 128 963 503 12;
-#X obj 17 152 f;
-#X obj 276 -33 loadbang;
-#X obj 276 -5 delay 200;
-#X obj 308 51 f \$1;
-#X obj 95 292 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 17 312 f;
+#X obj 248 63 loadbang;
+#X obj 248 91 delay 200;
+#X obj 280 147 f \$1;
+#X obj 60 462 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 17 23 inlet CWR_increaseBang;
-#X obj 660 27 inlet CWR_valueToResetTo;
-#X obj 660 91 s CWR_resetValue;
-#X obj 35 80 r CWR_resetValue;
-#X obj 49 263 moses;
-#X text 124 292 go back to first instrument \, when we have reached
+#X obj 17 133 inlet CWR_increaseBang;
+#X obj 660 137 inlet CWR_valueToResetTo;
+#X obj 660 201 s CWR_resetValue;
+#X obj 31 220 r CWR_resetValue;
+#X obj 17 433 moses;
+#X text 136 503 go back to first instrument \, when we have reached
 the last \; one;
-#X floatatom 308 75 5 0 0 0 - - -;
-#X text 659 140 26th November 2018 \; This patch has two inlet \; When
+#X floatatom 280 171 5 0 0 0 - - -;
+#X text 659 250 26th November 2018 \; This patch has two inlet \; When
 the inlet receives \; a bang \, it increases the counter. \; The first
 init argument sets the initial counter value. \; With the second inlet
 we can specify a number the counter \; should be reset to.;
-#X floatatom 91 255 5 0 0 0 - - -;
-#X obj 81 332 t f f;
-#X msg 113 360 1;
-#X text 327 24 init argument sets init counter value;
-#X obj 49 436 outlet CWR_currentCounterValue;
-#X obj 81 232 r nmbrOfInstruments;
-#X obj 51 109 print resetvalue;
-#X obj 37 50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X floatatom 59 405 5 0 0 0 - - -;
+#X obj 49 482 t f f;
+#X msg 81 510 1;
+#X text 299 120 init argument sets init counter value;
+#X obj 17 656 outlet CWR_currentCounterValue;
+#X obj 49 382 r nmbrOfInstruments;
+#X obj 37 160 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 276 25 t b b;
-#X floatatom 69 208 5 0 0 0 - - -;
-#X obj 113 388 s CWR_resetInstrCounter;
-#X obj 154 64 r CWR_resetInstrCounter;
-#X obj 17 176 t f f;
-#X obj 66 155 + 1;
-#X connect 0 0 25 0;
+#X obj 248 121 t b b;
+#X obj 159 222 r CWR_resetInstrCounter;
+#X obj 31 249 t b f;
+#X obj 81 538 s CWR_resetInstrCounter;
+#X obj 330 252 + 1;
+#X obj 17 567 t f f;
+#X obj 49 595 s CWR_updateInstrCounter;
+#X obj 330 223 r CWR_updateInstrCounter;
+#X connect 0 0 9 0;
 #X connect 1 0 2 0;
-#X connect 2 0 21 0;
+#X connect 2 0 20 0;
 #X connect 3 0 11 0;
 #X connect 5 0 0 0;
-#X connect 5 0 20 0;
+#X connect 5 0 19 0;
 #X connect 6 0 7 0;
-#X connect 8 0 0 1;
-#X connect 8 0 19 0;
-#X connect 9 0 17 0;
+#X connect 8 0 22 0;
+#X connect 9 0 25 0;
 #X connect 9 1 4 0;
 #X connect 9 1 14 0;
 #X connect 11 0 0 1;
@@ -50,9 +50,12 @@ we can specify a number the counter \; should be reset to.;
 #X connect 15 0 23 0;
 #X connect 18 0 13 0;
 #X connect 18 0 9 1;
-#X connect 21 0 0 0;
-#X connect 21 1 3 0;
+#X connect 20 0 0 0;
+#X connect 20 1 3 0;
+#X connect 21 0 0 1;
+#X connect 22 0 0 0;
+#X connect 22 1 0 1;
 #X connect 24 0 0 1;
-#X connect 25 0 9 0;
+#X connect 25 0 17 0;
 #X connect 25 1 26 0;
-#X connect 26 0 0 1;
+#X connect 27 0 24 0;
