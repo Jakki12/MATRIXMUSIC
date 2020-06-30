@@ -27,8 +27,8 @@
 #X obj 86 193 mtof;
 #X msg 350 196 0.75;
 #X obj 86 541 +~;
-#X obj 153 235 hsl 128 15 0 0.7 0 0 empty empty 0-1 15 9 0 12 -228856
--1 -1 2700 1;
+#X obj 153 235 hsl 128 15 0 0.7 0 1 empty empty 0-1 15 9 0 12 -228856
+-1 -1 2600 1;
 #X text 261 195 resets phase >;
 #X obj 469 27 loadbang;
 #X msg 469 83 1;
