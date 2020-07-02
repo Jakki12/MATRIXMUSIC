@@ -1,8 +1,8 @@
-#N canvas 0 23 1280 751 12;
-#X obj 80 511 *~;
-#X floatatom 207 401 5 0 1 0 - - -;
-#X obj 285 509 *~;
-#X text 248 398 feedback;
+#N canvas 26 99 1173 646 12;
+#X obj 80 536 *~;
+#X floatatom 207 296 5 0 1 0 - - -;
+#X obj 285 534 *~;
+#X text 248 293 feedback;
 #N canvas 0 23 1280 751 JD_setdelaytimes 0;
 #X obj 121 2139 outlet SDT_delayTimeInMs;
 #X obj 408 1388 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -456,8 +456,8 @@ banged when a new bpm is desired;
 #X connect 215 0 101 1;
 #X connect 218 0 105 0;
 #X connect 218 0 104 1;
-#X restore 701 371 pd JD_setdelaytimes;
-#X floatatom 701 395 5 0 0 0 - - -;
+#X restore 731 264 pd JD_setdelaytimes;
+#X floatatom 731 288 5 0 0 0 - - -;
 #N canvas 114 23 1003 482 JD_dryWetManagement 0;
 #X obj 57 60 inlet~ DWM_audioInLeft;
 #X obj 257 60 inlet~ DWM_audioInRight;
@@ -492,64 +492,69 @@ banged when a new bpm is desired;
 #X connect 8 0 14 1;
 #X connect 10 0 13 0;
 #X connect 14 0 16 0;
-#X restore 22 286 pd JD_dryWetManagement;
-#X obj 701 419 delay-time-syncer;
-#X obj 701 492 sig~;
-#X floatatom 701 466 5 0 0 0 - - -;
-#X obj 22 52 inlet~ JD_audioInLeft;
-#X obj 250 52 inlet~ JD_audioInRight;
-#X obj 80 479 vd~ \$0-delayLeft;
-#X obj 285 480 vd~ \$0-delayRight;
-#X obj 22 609 outlet~ JD_audioOutLeft;
-#X obj 205 609 outlet~ JD_audioOutRight;
-#X obj 620 52 inlet JD_metronomeBang;
-#X obj 501 119 cnv 15 218 140 empty empty empty 20 12 0 14 -228856
--66577 0;
-#X obj 553 126 hsl 128 15 0 1 0 1 empty empty dry/wet -2 -8 0 10 -257985
--1 -1 5300 1;
-#X obj 551 173 hsl 128 15 0 1 0 1 empty empty feedback -2 -8 0 10 -257985
--1 -1 5100 1;
-#X symbolatom 576 208 15 0 0 0 - - -;
-#X obj 548 207 bng 20 250 50 0 empty empty empty 17 7 0 10 -262130
+#X restore 22 181 pd JD_dryWetManagement;
+#X obj 731 312 delay-time-syncer;
+#X obj 731 368 sig~;
+#X floatatom 731 342 5 0 0 0 - - -;
+#X obj 22 -53 inlet~ JD_audioInLeft;
+#X obj 250 -53 inlet~ JD_audioInRight;
+#X obj 80 504 vd~ \$0-delayLeft;
+#X obj 285 505 vd~ \$0-delayRight;
+#X obj 22 634 outlet~ JD_audioOutLeft;
+#X obj 205 634 outlet~ JD_audioOutRight;
+#X obj 493 -54 inlet JD_metronomeBang;
+#X obj 1073 14 hsl 128 15 0 1 0 1 empty empty dry/wet -2 -8 0 10 -257985
+-1 -1 0 1;
+#X obj 1212 14 hsl 128 15 0 1 0 1 empty empty feedback -2 -8 0 10 -257985
+-1 -1 0 1;
+#X symbolatom 861 312 15 0 0 0 - - -;
+#X obj 1350 10 bng 20 250 50 0 empty empty empty 17 7 0 10 -262130
 -1 -1;
-#X obj 1071 187 cnv 15 120 30 empty \$1-delay-time 1/4_triol. 20 12
-0 14 -233017 -66577 0;
-#X obj 1070 337 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 764 -53 inlet JD_desiredBpm;
+#X obj 1070 -55 inlet JD_drywet;
+#X obj 1209 -53 inlet JD_feedback;
+#X obj 493 -24 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1055 380 \$0;
-#X floatatom 1055 404 5 0 0 0 - - -;
-#X text 1125 245 give canvas for showing \; the delay time a unique
-\; receive symbol name.;
-#X text 1100 354 send newly selected delay time \; to unique canvas-receive-symbol
-;
-#X msg 985 478 \; \$1-delay-time label hallo;
-#X obj 985 447 makefilename %d;
-#X msg 1092 299 \; \$1-delay-time receive \$1;
-#X obj 891 53 inlet JD_desiredBpm;
-#X obj 1070 50 inlet JD_drywet;
-#X obj 1209 52 inlet JD_feedback;
-#X obj 620 82 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 1342 48 inlet JD_changeTimingBang;
-#X obj 412 308 delwrite~ \$0-delayRight 5000;
-#X obj 122 331 delwrite~ \$0-delayLeft 5000;
-#X text 169 109 \$1 = clone index \, starting at 1 \; this corresponds
+#X obj 1342 -57 inlet JD_changeTimingBang;
+#X obj 412 203 delwrite~ \$0-delayRight 5000;
+#X obj 122 226 delwrite~ \$0-delayLeft 5000;
+#X text 169 4 \$1 = clone index \, starting at 1 \; this corresponds
 to the [sends~] \; of the different button sets \, sending \; its audio
 ;
-#X obj 51 169 catch~ audioLeftButtonSet_\$1;
-#X obj 172 197 catch~ audioRightButtonSet_\$1;
-#X obj 464 608 outlet JD_currentDelayTimeText;
-#X connect 0 0 37 0;
+#X obj 51 64 catch~ audioLeftButtonSet_\$1;
+#X obj 172 92 catch~ audioRightButtonSet_\$1;
+#X obj 469 632 outlet JD_currentDelayTimeText;
+#X obj 1533 -57 inlet JD_visualUpdate;
+#X obj 1533 -25 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 740 631 outlet JD_currentDryWetValue;
+#X obj 1533 113 f 0;
+#X obj 1551 61 r dryWet_\$1;
+#X floatatom 1558 88 5 0 0 0 - - -;
+#X floatatom 1070 35 5 0 0 0 - - -;
+#X obj 1070 71 s dryWet_\$1;
+#X obj 1010 631 outlet JD_currentFeedbackValue;
+#X floatatom 1209 41 5 0 0 0 - - -;
+#X obj 1209 67 s feedb_\$1;
+#X obj 1633 113 f 0;
+#X floatatom 1658 88 5 0 0 0 - - -;
+#X obj 1651 61 r feedb_\$1;
+#X obj 861 335 t s s;
+#X obj 1256 374 symbol;
+#X obj 893 382 s delayTimeText_\$1;
+#X obj 1295 332 r delayTimeText_\$1;
+#X obj 1533 7 t b b b;
+#X connect 0 0 27 0;
 #X connect 1 0 0 1;
 #X connect 1 0 2 1;
-#X connect 2 0 36 0;
+#X connect 2 0 26 0;
 #X connect 4 0 5 0;
-#X connect 4 1 20 0;
+#X connect 4 1 19 0;
 #X connect 5 0 7 0;
 #X connect 6 0 14 0;
 #X connect 6 1 15 0;
-#X connect 6 2 37 0;
-#X connect 6 3 36 0;
+#X connect 6 2 27 0;
+#X connect 6 3 26 0;
 #X connect 7 0 9 0;
 #X connect 8 0 12 0;
 #X connect 8 0 13 0;
@@ -560,20 +565,35 @@ to the [sends~] \; of the different button sets \, sending \; its audio
 #X connect 12 0 14 0;
 #X connect 13 0 2 0;
 #X connect 13 0 15 0;
-#X connect 16 0 34 0;
-#X connect 18 0 6 2;
-#X connect 19 0 1 0;
-#X connect 20 0 41 0;
-#X connect 21 0 4 0;
-#X connect 23 0 24 0;
-#X connect 24 0 25 0;
-#X connect 25 0 29 0;
-#X connect 29 0 28 0;
-#X connect 31 0 4 1;
-#X connect 32 0 18 0;
-#X connect 33 0 19 0;
-#X connect 34 0 7 1;
-#X connect 35 0 21 0;
-#X connect 39 0 6 0;
-#X connect 40 0 6 1;
-#X coords 0 -1 1 1 220 160 1 500 100;
+#X connect 16 0 24 0;
+#X connect 17 0 6 2;
+#X connect 17 0 38 0;
+#X connect 18 0 1 0;
+#X connect 18 0 41 0;
+#X connect 19 0 46 0;
+#X connect 20 0 4 0;
+#X connect 21 0 4 1;
+#X connect 22 0 17 0;
+#X connect 23 0 18 0;
+#X connect 24 0 7 1;
+#X connect 25 0 20 0;
+#X connect 29 0 6 0;
+#X connect 30 0 6 1;
+#X connect 32 0 33 0;
+#X connect 33 0 50 0;
+#X connect 35 0 34 0;
+#X connect 36 0 35 1;
+#X connect 36 0 37 0;
+#X connect 38 0 39 0;
+#X connect 41 0 42 0;
+#X connect 43 0 40 0;
+#X connect 45 0 43 1;
+#X connect 45 0 44 0;
+#X connect 46 0 31 0;
+#X connect 46 1 48 0;
+#X connect 47 0 31 0;
+#X connect 49 0 47 1;
+#X connect 50 0 35 0;
+#X connect 50 1 43 0;
+#X connect 50 2 47 0;
+#X coords 0 646 1 645 220 160 0;

@@ -1,4 +1,4 @@
-#N canvas 127 128 873 553 12;
+#N canvas 17 215 1062 553 12;
 #X obj 90 73 inlet instr1_midiPitch;
 #X obj 277 75 inlet instr1_decay;
 #N canvas 64 102 954 630 poly_blip1 0;
@@ -581,8 +581,10 @@
 #X obj 655 101 loadbang;
 #X obj 655 125 f \$1;
 #X obj 449 174 ==;
-#X text 709 127 first argument sets instrument index;
 #X floatatom 655 149 5 0 0 0 - - -;
+#X text 709 127 \$1 = clone index = buttonset \; When a midi note comes
+in \; and it belongs to the curren button set \; then audio is turned
+on [~*]. Otherwise \, \; audio is turned off.;
 #X connect 0 0 22 0;
 #X connect 1 0 21 2;
 #X connect 2 0 8 0;
@@ -606,6 +608,6 @@
 #X connect 21 1 2 1;
 #X connect 22 0 21 0;
 #X connect 23 0 24 0;
-#X connect 24 0 27 0;
+#X connect 24 0 26 0;
 #X connect 25 0 6 0;
-#X connect 27 0 25 1;
+#X connect 26 0 25 1;
