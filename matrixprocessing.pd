@@ -7,7 +7,7 @@
 -1;
 #X obj 36 267 r noOfButtSets;
 #X obj 18 294 f 0;
-#N canvas 249 56 720 509 MP_getButtonStatusForOneColumn 1;
+#N canvas 249 56 720 509 MP_getButtonStatusForOneColumn 0;
 #X obj 69 612 outlet MPGBSFOC_indexToTabread;
 #X text 427 252 set array;
 #X msg 206 331 symbol ButtonSetArray_\$1;
@@ -101,6 +101,9 @@ If status == 1 \, dann ist zeilennummer = index für tabread;
 #X obj 18 697 outlet MP_midiNoteToPlay;
 #X obj 18 472 t b f f;
 #X obj 569 695 outlet MP_CorrespondingButtonSetForCurrentMidiNote;
+#X text 74 322 on each sequencer step \, we have to read the button
+status of each button set.;
+#X text 98 475 f = current button set;
 #X connect 0 0 1 0;
 #X connect 1 0 13 0;
 #X connect 3 0 1 0;

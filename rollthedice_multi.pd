@@ -1,0 +1,59 @@
+#N canvas 420 222 860 499 10;
+#X text 277 141 probability to bang left outlet;
+#X obj 168 171 random 100;
+#X obj 168 279 expr $f1 <= $f2;
+#X floatatom 330 206 5 0 0 0 - - -;
+#X text 295 250 check if randomly generated value is \; in interval
+[1 \; probability]. It will be \; in this intervall with the probability
+of \; the incoming probability.;
+#X obj 168 330 sel 1, f 41;
+#X text 11 345 probability fulfilled;
+#X obj 168 366 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 456 363 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 496 357 probability not fullfilled;
+#X floatatom 187 301 5 0 0 0 - - -;
+#X obj 168 140 t b f, f 15;
+#X obj 168 214 + 1;
+#X floatatom 189 248 5 0 0 0 - - -;
+#X obj 168 104 f 0;
+#X floatatom 343 51 5 0 0 0 - - -;
+#X obj 168 19 inlet RTD_midiNoteToPlay;
+#X obj 343 30 inlet RTD_probability;
+#X obj 519 29 inlet RTD_visualUpdate;
+#X obj 519 50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 343 83 t f f;
+#X obj 519 104 f 0;
+#X text 559 102 save probability for visual update from \; a specific
+clone index;
+#X obj 519 153 s PG_Slider_Rcv;
+#X text 635 156 send probability to slider gui \; on main window directly
+;
+#X text 193 400 if probability is fullfilled \; bang left;
+#X obj 168 470 outlet RTD_ProbabilityFullfilledBang;
+#X obj 456 470 outlet RTD_notFulfilledBang;
+#X obj 168 40 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 1 0 12 0;
+#X connect 2 0 10 0;
+#X connect 2 0 5 0;
+#X connect 5 0 7 0;
+#X connect 5 1 8 0;
+#X connect 7 0 26 0;
+#X connect 8 0 27 0;
+#X connect 11 0 1 0;
+#X connect 11 1 2 1;
+#X connect 12 0 2 0;
+#X connect 12 0 13 0;
+#X connect 14 0 11 0;
+#X connect 15 0 20 0;
+#X connect 16 0 28 0;
+#X connect 17 0 15 0;
+#X connect 18 0 19 0;
+#X connect 19 0 21 0;
+#X connect 20 0 14 1;
+#X connect 20 1 21 1;
+#X connect 21 0 23 0;
+#X connect 28 0 14 0;

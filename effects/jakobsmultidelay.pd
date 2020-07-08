@@ -531,7 +531,7 @@ to the [sends~] \; of the different button sets \, sending \; its audio
 #X obj 1533 113 f 0;
 #X obj 1551 61 r dryWet_\$1;
 #X floatatom 1558 88 5 0 0 0 - - -;
-#X floatatom 1070 35 5 0 0 0 - - -;
+#X floatatom 1070 40 5 0 0 0 - - -;
 #X obj 1070 71 s dryWet_\$1;
 #X obj 1010 631 outlet JD_currentFeedbackValue;
 #X floatatom 1209 41 5 0 0 0 - - -;
